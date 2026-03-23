@@ -12,6 +12,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
+      - name: Cache cargo bin
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/bin/resvg
+          key: ${{ runner.os }}-resvg
+          restore-keys: |
+            ${{ runner.os }}-resvg-
+
       - name: Install resvg
         run: cargo install resvg --locked
 
