@@ -4,6 +4,20 @@
 
   ],
   "packages": {
-
+    "cn.com.bmac.nfc": {
+      "files": [
+        "monochrome"
+      ]
+    },
+    "cn.com.chsi.chsiapp": {
+      "files": [
+        "monochrome"
+      ]
+    },
+    "cn.com.langeasy.LangEasyLexis": {
+      "files": [
+        "monochrome"
+      ]
+    }
   }
 }
