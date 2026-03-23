@@ -42,7 +42,7 @@ jobs:
                 [ -f "$file" ] || continue
                 name=$(basename "$file" .svg)
                 echo "Converting $file → $name.png"
-                resvg "$file" "out/uxicons/icons/$pkg/$name.png" -w 192 -h 192
+                resvg "$file" "out/uxicons/icons/$pkg/$name.png"
               done
             done
           fi
