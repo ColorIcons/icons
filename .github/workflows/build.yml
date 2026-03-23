@@ -17,87 +17,87 @@ jobs:
 
       - name: Build assets
         run: |
-          mkdir -p dist/uxicons/icons
-          mkdir -p dist/uxicons/global
+          mkdir -p out/uxicons/icons
+          mkdir -p out/uxicons/global
 
           echo "Processing packages..."
-
-          if [ -d icons/packages ]; then
-            for dir in icons/packages/*; do
+          if [ -d packages ]; then
+            for dir in packages/*; do
               [ -d "$dir" ] || continue
               pkg=$(basename "$dir")
-              mkdir -p dist/uxicons/icons/$pkg
+              mkdir -p out/uxicons/icons/$pkg
 
               for file in "$dir"/*.svg; do
                 [ -f "$file" ] || continue
                 name=$(basename "$file" .svg)
-                resvg "$file" "dist/uxicons/icons/$pkg/$name.png"
+                echo "Converting $file → $name.png"
+                resvg "$file" "out/uxicons/icons/$pkg/$name.png"
               done
             done
           fi
 
           echo "Processing global..."
-
-          if [ -d icons/global ]; then
-            cp -r icons/global/* dist/uxicons/global/ || true
+          if [ -d global ]; then
+            cp -r global/* out/uxicons/global/ || true
           fi
 
       - name: Generate index.json
         run: |
           echo "Generating index.json..."
+          mkdir -p out/uxicons
 
-          mkdir -p dist/uxicons
+          echo '{' > out/uxicons/index.json
+          echo '  "version": "0.1.0",' >> out/uxicons/index.json
 
-          echo '{' > dist/uxicons/index.json
-          echo '  "version": "0.1.0",' >> dist/uxicons/index.json
-          echo '  "global": [' >> dist/uxicons/index.json
-
+          echo '  "global": [' >> out/uxicons/index.json
           first=1
-          for file in dist/uxicons/global/*; do
-            [ -f "$file" ] || continue
-            name=$(basename "$file")
-            if [ $first -eq 0 ]; then echo ',' >> dist/uxicons/index.json; fi
-            echo -n "    \"$name\"" >> dist/uxicons/index.json
-            first=0
-          done
-
-          echo '' >> dist/uxicons/index.json
-          echo '  ],' >> dist/uxicons/index.json
-          echo '  "packages": {' >> dist/uxicons/index.json
-
-          first_pkg=1
-          for dir in dist/uxicons/icons/*; do
-            [ -d "$dir" ] || continue
-            pkg=$(basename "$dir")
-
-            if [ $first_pkg -eq 0 ]; then echo ',' >> dist/uxicons/index.json; fi
-            echo "    \"$pkg\": {" >> dist/uxicons/index.json
-            echo '      "files": [' >> dist/uxicons/index.json
-
-            first_file=1
-            for file in "$dir"/*.png; do
+          if [ -d out/uxicons/global ]; then
+            for file in out/uxicons/global/*; do
               [ -f "$file" ] || continue
-              name=$(basename "$file" .png)
-
-              if [ $first_file -eq 0 ]; then echo ',' >> dist/uxicons/index.json; fi
-              echo -n "        \"$name\"" >> dist/uxicons/index.json
-              first_file=0
+              name=$(basename "$file")
+              if [ $first -eq 0 ]; then echo ',' >> out/uxicons/index.json; fi
+              echo -n "    \"$name\"" >> out/uxicons/index.json
+              first=0
             done
+          fi
+          echo '' >> out/uxicons/index.json
+          echo '  ],' >> out/uxicons/index.json
 
-            echo '' >> dist/uxicons/index.json
-            echo '      ]' >> dist/uxicons/index.json
-            echo -n '    }' >> dist/uxicons/index.json
+          echo '  "packages": {' >> out/uxicons/index.json
+          first_pkg=1
+          if [ -d out/uxicons/icons ]; then
+            for dir in out/uxicons/icons/*; do
+              [ -d "$dir" ] || continue
+              pkg=$(basename "$dir")
+              if [ $first_pkg -eq 0 ]; then echo ',' >> out/uxicons/index.json; fi
+              echo "    \"$pkg\": {" >> out/uxicons/index.json
+              echo '      "files": [' >> out/uxicons/index.json
 
-            first_pkg=0
-          done
+              first_file=1
+              for file in "$dir"/*.png; do
+                [ -f "$file" ] || continue
+                name=$(basename "$file" .png)
+                if [ $first_file -eq 0 ]; then echo ',' >> out/uxicons/index.json; fi
+                echo -n "        \"$name\"" >> out/uxicons/index.json
+                first_file=0
+              done
 
-          echo '' >> dist/uxicons/index.json
-          echo '  }' >> dist/uxicons/index.json
-          echo '}' >> dist/uxicons/index.json
+              echo '' >> out/uxicons/index.json
+              echo '      ]' >> out/uxicons/index.json
+              echo -n '    }' >> out/uxicons/index.json
+              first_pkg=0
+            done
+          fi
+          echo '' >> out/uxicons/index.json
+          echo '  }' >> out/uxicons/index.json
+          echo '}' >> out/uxicons/index.json
+
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
 
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./dist
+          publish_dir: ./out
