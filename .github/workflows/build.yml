@@ -20,8 +20,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-resvg-
 
-      - name: Install resvg
-        run: cargo install resvg --locked
+- name: Install resvg if missing
+  run: |
+    if [ ! -f ~/.cargo/bin/resvg ]; then
+      cargo install resvg --locked
+    fi
 
       - name: Build assets
         run: |
