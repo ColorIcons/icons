@@ -1,20 +1,32 @@
 {
-  "version": "0.1.0",
+  "global_version": "1.0.0",
   "global": [
-
+    "icons-rectangle",
+    "icons-pebble",
+    "icons-nightshadow",
+    "icons-monorectangle",
+    "icons-meterial",
+    "icons-daylight",
+    "icons-darkrectangle"
   ],
   "packages": {
     "cn.com.bmac.nfc": {
+      "version": "0.1.0",
+      "required": [],
       "files": [
         "monochrome"
       ]
     },
     "cn.com.chsi.chsiapp": {
+      "version": "0.1.0",
+      "required": [],
       "files": [
         "monochrome"
       ]
     },
     "cn.com.langeasy.LangEasyLexis": {
+      "version": "0.1.0",
+      "required": [],
       "files": [
         "monochrome"
       ]
