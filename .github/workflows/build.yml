@@ -47,15 +47,15 @@ jobs:
         run: |
           set -e
 
-          mkdir -p out/uxicons/packages
-          mkdir -p out/uxicons/global
+          mkdir -p out/packages
+          mkdir -p out/global
 
           echo "===== Processing packages ====="
           if [ -d packages ]; then
             for dir in packages/*; do
               [ -d "$dir" ] || continue
               pkg=$(basename "$dir")
-              outdir="out/uxicons/packages/$pkg"
+              outdir="out/packages/$pkg"
               mkdir -p "$outdir"
 
               echo ">> Package: $pkg"
@@ -80,7 +80,7 @@ jobs:
           if [ -d global ]; then
             for f in global/*; do
               [ -f "$f" ] || continue
-              cp "$f" out/uxicons/global/
+              cp "$f" out/global/
             done
           fi
 
@@ -88,16 +88,16 @@ jobs:
       # 5️⃣ Generate manifests
       # ----------------------------
       - name: Generate manifests
-        run: python3 scripts/gen_manifest.py out/uxicons/packages
+        run: python3 scripts/gen_manifest.py out/packages
 
       # ----------------------------
       # 6️⃣ Generate index.json
       # ----------------------------
       - name: Generate index
-        run: python3 scripts/gen_index.py out/uxicons
+        run: python3 scripts/gen_index.py out
 
       - name: Generate HTML preview
-        run: python3 scripts/gen_html.py out/uxicons
+        run: python3 scripts/gen_html.py out
 
       # ----------------------------
       # 7️⃣ Add .nojekyll
