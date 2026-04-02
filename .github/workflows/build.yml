@@ -9,9 +9,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ----------------------------
+      # 1️⃣ Checkout
+      # ----------------------------
       - name: Checkout
         uses: actions/checkout@v5
 
+      # ----------------------------
+      # 2️⃣ Setup Python（生成 manifest/index）
+      # ----------------------------
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # ----------------------------
+      # 3️⃣ Cache resvg
+      # ----------------------------
       - name: Cache cargo bin
         uses: actions/cache@v3
         with:
@@ -26,28 +40,43 @@ jobs:
             cargo install resvg --locked
           fi
 
+      # ----------------------------
+      # 4️⃣ Build assets
+      # ----------------------------
       - name: Build assets
         run: |
-          mkdir -p out/uxicons/icons
+          set -e
+
+          mkdir -p out/uxicons/packages
           mkdir -p out/uxicons/global
 
-          echo "Processing packages..."
+          echo "===== Processing packages ====="
           if [ -d packages ]; then
             for dir in packages/*; do
               [ -d "$dir" ] || continue
               pkg=$(basename "$dir")
-              mkdir -p out/uxicons/icons/$pkg
+              outdir="out/uxicons/packages/$pkg"
+              mkdir -p "$outdir"
 
+              echo ">> Package: $pkg"
+
+              # 复制已有 PNG
+              for file in "$dir"/*.png; do
+                [ -f "$file" ] || continue
+                cp "$file" "$outdir/"
+              done
+
+              # SVG → PNG
               for file in "$dir"/*.svg; do
                 [ -f "$file" ] || continue
                 name=$(basename "$file" .svg)
-                echo "Converting $file → $name.png"
-                resvg "$file" "out/uxicons/icons/$pkg/$name.png"
+                echo "Convert $file → $name.png"
+                ~/.cargo/bin/resvg "$file" "$outdir/$name.png"
               done
             done
           fi
 
-          echo "Processing global..."
+          echo "===== Processing global ====="
           if [ -d global ]; then
             for f in global/*; do
               [ -f "$f" ] || continue
@@ -55,12 +84,30 @@ jobs:
             done
           fi
 
-          echo "Copying index.json..."
-          cp index.json out/uxicons/index.json
+      # ----------------------------
+      # 5️⃣ Generate manifests
+      # ----------------------------
+      - name: Generate manifests
+        run: python3 scripts/gen_manifest.py out/uxicons/packages
 
+      # ----------------------------
+      # 6️⃣ Generate index.json
+      # ----------------------------
+      - name: Generate index
+        run: python3 scripts/gen_index.py out/uxicons
+
+- name: Generate HTML preview
+  run: python3 scripts/gen_html.py out/uxicons
+
+      # ----------------------------
+      # 7️⃣ Add .nojekyll
+      # ----------------------------
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
+      # ----------------------------
+      # 8️⃣ Deploy to gh-pages
+      # ----------------------------
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:

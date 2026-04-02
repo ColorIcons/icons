@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+
+import sys
+import json
+from pathlib import Path
+
+ROOT = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
+INDEX_FILE = ROOT / "index.json"
+OUTPUT_HTML = ROOT / "index.html"
+
+
+def main():
+    if not INDEX_FILE.exists():
+        print(f"{INDEX_FILE} not found")
+        return
+
+    with open(INDEX_FILE) as f:
+        index = json.load(f)
+
+    html_lines = [
+        "<!DOCTYPE html>",
+        "<html lang='en'>",
+        "<head><meta charset='UTF-8'><title>UX Icons</title>",
+        "<style>",
+        "body{font-family:sans-serif;padding:1em;} .pkg{margin-bottom:2em;} .pkg h2{margin:0.5em 0;} .files{display:flex;flex-wrap:wrap;} .file{margin:0.5em;text-align:center;} img{width:64px;height:64px;}",
+        "</style>",
+        "</head><body>",
+        "<h1>UX Icons Packages</h1>",
+    ]
+
+    for pkg_name, pkg_info in sorted(index.get("packages", {}).items()):
+        manifest_path = ROOT / pkg_info["manifest"]
+        if not manifest_path.exists():
+            continue
+
+        with open(manifest_path) as mf:
+            manifest = json.load(mf)
+
+        html_lines.append(f"<div class='pkg'>")
+        html_lines.append(f"<h2>{pkg_name}</h2>")
+        html_lines.append(f"<div class='files'>")
+
+        for f in manifest["files"]:
+            file_path = f"{pkg_info['manifest'].rsplit('/', 1)[0]}/{f['file']}"
+            if f.get("type") == "icon":
+                html_lines.append(
+                    f"<div class='file'><img src='{file_path}' alt='{f['file']}'><br>{f['file']}</div>"
+                )
+            else:
+                html_lines.append(f"<div class='file'>{f['file']}</div>")
+
+        html_lines.append("</div></div>")
+
+    html_lines.append("</body></html>")
+
+    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+        f.write("\n".join(html_lines))
+
+    print(f"HTML preview generated at {OUTPUT_HTML}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+
+import sys
+import json
+import hashlib
+from pathlib import Path
+
+# 支持 CI 指定目录，否则默认 packages/
+PACKAGES_DIR = Path(sys.argv[1] if len(sys.argv) > 1 else "packages")
+
+# 默认非必须文件
+OPTIONAL_FILES = {
+    "mat.png",
+    "monochrome.png",
+    "recbg.png",
+    "recfg.png",
+    "rec_night.png",
+}
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(8192):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def detect_variant(name: str):
+    if name == "mat.png":
+        return ("icon", "mat")
+    if name == "monochrome.png":
+        return ("icon", "monochrome")
+    if name == "recbg.png":
+        return ("icon", "light_bg")
+    if name == "recfg.png":
+        return ("icon", "light_fg")
+    if name == "rec_night.png":
+        return ("icon", "dark_fg")
+    return ("asset", None)
+
+
+def is_required(name: str) -> bool:
+    return name not in OPTIONAL_FILES
+
+
+def calc_version_from_dir(pkg_dir: Path) -> str:
+    """目录级 version，只在目录内容变化时更新"""
+    h = hashlib.sha256()
+    files = []
+
+    for f in pkg_dir.iterdir():
+        if not f.is_file():
+            continue
+        if f.name == "manifest.json":
+            continue
+        if f.suffix not in [".png"]:
+            continue
+        files.append(f)
+
+    for f in sorted(files, key=lambda x: x.name):
+        h.update(f.name.encode())
+        with open(f, "rb") as fp:
+            while chunk := fp.read(8192):
+                h.update(chunk)
+    return h.hexdigest()[:12]
+
+
+def build_manifest(pkg_dir: Path):
+    files = []
+
+    for file in pkg_dir.iterdir():
+        if not file.is_file():
+            continue
+        if file.name == "manifest.json":
+            continue
+        if file.suffix not in [".png"]:
+            continue
+
+        file_type, variant = detect_variant(file.name)
+
+        entry = {
+            "file": file.name,
+            "type": file_type,
+            "required": is_required(file.name),
+            "sha256": sha256_file(file),
+            "size": file.stat().st_size,
+        }
+        if variant:
+            entry["variant"] = variant
+        files.append(entry)
+
+    manifest = {
+        "version": calc_version_from_dir(pkg_dir),
+        "files": sorted(files, key=lambda x: x["file"]),
+    }
+
+    return manifest
+
+
+def main():
+    if not PACKAGES_DIR.exists():
+        print("packages directory not found")
+        return
+
+    for pkg_dir in PACKAGES_DIR.iterdir():
+        if not pkg_dir.is_dir():
+            continue
+        print(f"Generating manifest for {pkg_dir.name}")
+        manifest = build_manifest(pkg_dir)
+        out_file = pkg_dir / "manifest.json"
+        with open(out_file, "w") as f:
+            json.dump(manifest, f, indent=2, ensure_ascii=False)
+
+
+if __name__ == "__main__":
+    main()
