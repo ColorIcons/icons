@@ -96,8 +96,8 @@ jobs:
       - name: Generate index
         run: python3 scripts/gen_index.py out/uxicons
 
-- name: Generate HTML preview
-  run: python3 scripts/gen_html.py out/uxicons
+      - name: Generate HTML preview
+        run: python3 scripts/gen_html.py out/uxicons
 
       # ----------------------------
       # 7️⃣ Add .nojekyll
