@@ -1,35 +1,51 @@
 {
-  "global_version": "1.0.0",
-  "global": [
-    "icons-rectangle",
-    "icons-pebble",
-    "icons-nightshadow",
-    "icons-monorectangle",
-    "icons-meterial",
-    "icons-daylight",
-    "icons-darkrectangle"
-  ],
+  "repo_version": 1,
+  "generated_at": 1775098190,
+  "global": {
+    "version": "b59f2338ca3c",
+    "files": {
+      "icons-monorectangle": {
+        "sha256": "34a4182890da457264df83de9dd4ee421d657b64024903821c4e79b39b50038b",
+        "size": 58751
+      },
+      "icons-meterial": {
+        "sha256": "27f5cd8222cc89daa7af016b5542b89c5f0e4a392a0b36b2e3e873376128bd86",
+        "size": 14339
+      },
+      "icons-daylight": {
+        "sha256": "1cf858321d869a145669590eaa1a4f883e63fe5a9ff75e51c9ecd234b7e42af7",
+        "size": 54208
+      },
+      "icons-rectangle": {
+        "sha256": "532d0ede5ef1cbe2f67e810178c7b3c5df0e3cdae0b7da78df47fb90c63ea9c9",
+        "size": 220664
+      },
+      "icons-nightshadow": {
+        "sha256": "e024de6580f710ba3179ac31ad8275ffafc5afd54fc1a240422b5cf961d92329",
+        "size": 65169
+      },
+      "icons-pebble": {
+        "sha256": "a1a668c053f1cb2555851f126681e1abe8e71fd210120ca4a68de69658dc529c",
+        "size": 18339
+      },
+      "icons-darkrectangle": {
+        "sha256": "278e4890505a59f1177f5c1912179c3cc6d2b739abb5feae08f6cdc69df99e97",
+        "size": 158123
+      }
+    }
+  },
   "packages": {
-    "cn.com.bmac.nfc": {
-      "version": "0.1.0",
-      "required": [],
-      "files": [
-        "monochrome"
-      ]
-    },
     "cn.com.chsi.chsiapp": {
-      "version": "0.1.0",
-      "required": [],
-      "files": [
-        "monochrome"
-      ]
+      "version": "5080670f1347",
+      "manifest": "packages/cn.com.chsi.chsiapp/manifest.json"
+    },
+    "cn.com.bmac.nfc": {
+      "version": "22d2e34fa2e8",
+      "manifest": "packages/cn.com.bmac.nfc/manifest.json"
     },
     "cn.com.langeasy.LangEasyLexis": {
-      "version": "0.1.0",
-      "required": [],
-      "files": [
-        "monochrome"
-      ]
+      "version": "253516777438",
+      "manifest": "packages/cn.com.langeasy.LangEasyLexis/manifest.json"
     }
   }
 }
