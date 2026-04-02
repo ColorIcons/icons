@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import sys
 import json
 from pathlib import Path
@@ -22,7 +21,13 @@ def main():
         "<html lang='en'>",
         "<head><meta charset='UTF-8'><title>UX Icons</title>",
         "<style>",
-        "body{font-family:sans-serif;padding:1em;} .pkg{margin-bottom:2em;} .pkg h2{margin:0.5em 0;} .files{display:flex;flex-wrap:wrap;} .file{margin:0.5em;text-align:center;} img{width:64px;height:64px;}",
+        "body{font-family:sans-serif;padding:1em;} ",
+        ".pkg{margin-bottom:2em;} ",
+        ".pkg h2{margin:0.5em 0;} ",
+        ".files{display:flex;flex-wrap:wrap;} ",
+        ".file{margin:0.5em;text-align:center;} ",
+        "img{width:64px;height:64px;border:1px solid #ccc;padding:2px;cursor:pointer;} ",
+        "a{text-decoration:none;color:inherit;}",
         "</style>",
         "</head><body>",
         "<h1>UX Icons Packages</h1>",
@@ -43,11 +48,14 @@ def main():
         for f in manifest["files"]:
             file_path = f"{pkg_info['manifest'].rsplit('/', 1)[0]}/{f['file']}"
             if f.get("type") == "icon":
+                # 图片可点击跳转
                 html_lines.append(
-                    f"<div class='file'><img src='{file_path}' alt='{f['file']}'><br>{f['file']}</div>"
+                    f"<div class='file'><a href='{file_path}' target='_blank'><img src='{file_path}' alt='{f['file']}'></a><br>{f['file']}</div>"
                 )
             else:
-                html_lines.append(f"<div class='file'>{f['file']}</div>")
+                html_lines.append(
+                    f"<div class='file'><a href='{file_path}' target='_blank'>{f['file']}</a></div>"
+                )
 
         html_lines.append("</div></div>")
 
