@@ -1,8 +1,8 @@
 {
   "repo_version": 1,
-  "generated_at": 1775200821,
+  "generated_at": 1775230727,
   "global": {
-    "version": "5cc424c3446a",
+    "version": "ed7ab785dad8",
     "files": {
       "icons-monorectangle": {
         "sha256": "34a4182890da457264df83de9dd4ee421d657b64024903821c4e79b39b50038b",
@@ -296,6 +296,75 @@
           }
         }
       },
+      "com.oplus.aimemory": {
+        "version": "01f7690563d0",
+        "files": {
+          "monochrome.png": {
+            "sha256": "1bb710feb953865984bc554cee7fdd675fa97d5a4e36a82341c3a6439be1db82",
+            "size": 1044
+          },
+          "monochrome_1x2.png": {
+            "sha256": "418b641b68847d057f2ad4eea2840bdc7a149879b65c897bd16b7628aa8a9926",
+            "size": 1295
+          },
+          "monochrome_2x1.png": {
+            "sha256": "ab578c3cba286757f00c303077eb1dcf82c22b7996ead8b52f13b9dac952b17f",
+            "size": 1372
+          },
+          "monochrome_2x2.png": {
+            "sha256": "0367232c6df16a65e3b2b1cbc5a8ed69d49c1d9a1390d0fd544dc8d460985d80",
+            "size": 3054
+          },
+          "rec_night.png": {
+            "sha256": "1d04acf387ad79775152b9015cf6bbd22012a45e77d033fb10b904c00cf8db6d",
+            "size": 2381
+          },
+          "rec_night_1x2.png": {
+            "sha256": "3685bbda5daa201006fcc6b2216e322bd696940d075753a95234eda5f3906be7",
+            "size": 4740
+          },
+          "rec_night_2x1.png": {
+            "sha256": "97af83fb1e965e534b2705cc1c64eafe1b37e72c2b29cd14382104b1dddca264",
+            "size": 3770
+          },
+          "rec_night_2x2.png": {
+            "sha256": "a2f2e80af5581405b023b76f65321dcda66b5a70f99634d6f0930516437c0ed0",
+            "size": 8484
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "6868390f6f31236498112754b50748bd8e075b23c60df4e10e716f2d2ce8551e",
+            "size": 2371
+          },
+          "recfg_1x2.png": {
+            "sha256": "e78861eacd2d86a9bfe6dae3bde3f0974347d8a32d2a8038e27ad633ef690ae3",
+            "size": 4739
+          },
+          "recfg_2x1.png": {
+            "sha256": "b65c1ff0c1df439879d1937826a4c4392699108b3fbaaf06f7def3df4c707d47",
+            "size": 3764
+          },
+          "recfg_2x2.png": {
+            "sha256": "8c270a2ed3030937637c260b5353f7e64a58d02abb2200378b5dc55a453134d3",
+            "size": 8483
+          }
+        }
+      },
       "com.heytap.market": {
         "version": "4995bd942b3d",
         "files": {
@@ -527,6 +596,192 @@
           "recfg_2x2.png": {
             "sha256": "410ceeb3fbdd094ef3bb0c98a83f3cc81e5489c36b836794307b59c7b5051223",
             "size": 7858
+          }
+        }
+      },
+      "com.coloros.digitalwellbeing": {
+        "version": "5e5d7cf5284a",
+        "files": {
+          "monochrome.png": {
+            "sha256": "7fec4c75b000dc64b23d58d2ab94f64618b78a1924852f83b4d0d38f77a203aa",
+            "size": 977
+          },
+          "monochrome_1x2.png": {
+            "sha256": "d44d592480f0c87e41c2e56daebf5445b5eed1ce3ca237e902b0318288a6d531",
+            "size": 8936
+          },
+          "monochrome_2x1.png": {
+            "sha256": "92292dbee0d029ea9bc1b37b6c52aac70fea0ab25cd62ab51010d99092986cc5",
+            "size": 10679
+          },
+          "monochrome_2x2.png": {
+            "sha256": "416c910be65960f68c934d3f75b09d202c0da80859dea8f0cfd91f8179b06a85",
+            "size": 26334
+          },
+          "rec_night.png": {
+            "sha256": "5f47a0270691c9a072952bd4fb347f8763468e51cb74ffd792d10defd2f97af7",
+            "size": 2171
+          },
+          "rec_night_1x2.png": {
+            "sha256": "80271bc5a67eaa98e2b9996f7755fb67ddd5ecb93687690cf68aa89a8fb6de13",
+            "size": 23598
+          },
+          "rec_night_2x1.png": {
+            "sha256": "882a0f7a17449499b5cb76766d4b5b40b5425f142a40bef7b0f5a90e370b6658",
+            "size": 28445
+          },
+          "rec_night_2x2.png": {
+            "sha256": "fbf2cd09161e928f33514bbad4966836ef5a1f302336d901435ecb69749ea0ea",
+            "size": 67877
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "197ebf74c5af726974d3e5efb70486ca53f75dfbc19b6e5121679d13323ccb1a",
+            "size": 2176
+          },
+          "recfg_1x2.png": {
+            "sha256": "9627f6e9f779b4932fe2a6b73d395e72e9a6c635c9bce5f42dd17e951100d7c0",
+            "size": 23661
+          },
+          "recfg_2x1.png": {
+            "sha256": "1f5be9a6434a2afdf59969d5a6316d709bf5eae5bfbb04b0e373cda142eef17a",
+            "size": 28463
+          },
+          "recfg_2x2.png": {
+            "sha256": "446cff0ca70163548e5809ce8237ea17118ef6bb66c3c03741ad7713bfbde339",
+            "size": 67716
+          }
+        }
+      },
+      "com.oplus.camera": {
+        "version": "3363b727c337",
+        "files": {
+          "day.png": {
+            "sha256": "57b5c853c14f40d94c085458eabb0a31c751196c1219a34b2059cc5485938dca",
+            "size": 48033
+          },
+          "mat.png": {
+            "sha256": "4d759b5fcc1e94866eeb4f7dec385393f460c3e0d6d1f9c452c71f321d26d2c4",
+            "size": 31545
+          },
+          "monochrome.png": {
+            "sha256": "0102d2962bf5d258fdf0203dadc5ce308700b0fb4ca8e95e316b28ebc2b322b7",
+            "size": 1285
+          },
+          "monochrome_1x2.png": {
+            "sha256": "5c3e3daf601f24f691adf61bd606715ae906f71b5c63089cb405bf079b3f8b44",
+            "size": 2872
+          },
+          "monochrome_2x1.png": {
+            "sha256": "4c60387de89d3c80fcecc6c552740dfe67b39265926740cfa937f2447fa0c2f7",
+            "size": 2930
+          },
+          "monochrome_2x2.png": {
+            "sha256": "3b529e5e5daf5990e08d84fe14ea0922e586ababb2c5678c44ef7bd0ac909e83",
+            "size": 5472
+          },
+          "nsd.png": {
+            "sha256": "4fd0f226c958d265661fc110f607e906f877c6c1636285af7d3e5e57126be378",
+            "size": 2920
+          },
+          "outline.png": {
+            "sha256": "863f37b43c58964ce2384ffd75e0bb076c698bffc7643836d664aeba34c78038",
+            "size": 1072
+          },
+          "peb.png": {
+            "sha256": "49b91742df6c037b25ecf377b5cf5a619546a89095a2a05460b8857e58bdfb17",
+            "size": 13479
+          },
+          "rec_night.png": {
+            "sha256": "f28512fde4fd3007683e0e2d187d41939249596277b0a33b722ab6910c4df4ad",
+            "size": 2995
+          },
+          "rec_night_1x2.png": {
+            "sha256": "543bc3d390e8aa46a7c7b80e27aa2f5a23b3d8e389368648bef45c2299a09fe9",
+            "size": 8830
+          },
+          "rec_night_2x1.png": {
+            "sha256": "b9ac03bcc580c80edb9d8dc72ef9a82fb0759415f02ada5b0f45a5c97bf03216",
+            "size": 7593
+          },
+          "rec_night_2x2.png": {
+            "sha256": "e81732a169b60d135fff9ba5baf01e18363fd66f7884c5cea0ad8a17cda9106a",
+            "size": 14573
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "30ecdc675e1a5ad22dd5f6f7b874a9860fcac1e36038f272f51cacc9c1275008",
+            "size": 2965
+          },
+          "recfg_1x2.png": {
+            "sha256": "66141d854bb0748336ca7526c15d898c58cf19ec3ba2d2c66b6aba7a7949552f",
+            "size": 8778
+          },
+          "recfg_2x1.png": {
+            "sha256": "f95c540e06f50a35ec6c2c25b5756564af093aa6a87b8293093583de28e6f2f6",
+            "size": 7578
+          },
+          "recfg_2x2.png": {
+            "sha256": "08c1dce5d36b93860042c971e8560cc26a42bb64b6a405b3aea4e466036119ec",
+            "size": 14585
+          },
+          "shortcut_common_video_static.png": {
+            "sha256": "88deea7800034ca2c42c8e6f0f90e45f053cbcd73b46e954951686e07e8f1d6e",
+            "size": 1411
+          },
+          "shortcut_face_beauty_static.png": {
+            "sha256": "56042a23022adfe29e632544d7b98ba033c2cd46205801b17326128c153f6407",
+            "size": 1421
+          },
+          "shortcut_hasselblad_static.png": {
+            "sha256": "c695374b15f805d81f42b014d3198e9bda4fc1f2928e8ba7290891f9c2c98319",
+            "size": 1652
+          },
+          "shortcut_master_static.png": {
+            "sha256": "7f4bb46d1c028b95043726a744d243c7694728ea5d1536d8cd346b9910ddb36a",
+            "size": 1645
+          },
+          "shortcut_portrait_static.png": {
+            "sha256": "27d7722532d0f1cdeaabc6642e5829f0b704758747bfc27e0e772687c036d68a",
+            "size": 1600
+          },
+          "shortcut_supertext_static.png": {
+            "sha256": "1c61674289b1f347ea6437eaaf5f91018e6f5c9fe34ea800ddf1d548ed32d0a8",
+            "size": 1440
+          },
+          "shortcut_xpan_static.png": {
+            "sha256": "97eb426b704a896d5cc164abd4917fadaf82fc678159c6833e9cbfc3d28b33b1",
+            "size": 1816
           }
         }
       },
