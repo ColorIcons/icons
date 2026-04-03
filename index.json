@@ -1,6 +1,6 @@
 {
   "repo_version": 1,
-  "generated_at": 1775186086,
+  "generated_at": 1775187130,
   "global": {
     "version": "b59f2338ca3c",
     "files": {
@@ -46,6 +46,10 @@
     "cn.com.bmac.nfc": {
       "version": "22d2e34fa2e8",
       "manifest": "packages/cn.com.bmac.nfc/manifest.json"
+    },
+    "chat.simplex.app": {
+      "version": "17550045b102",
+      "manifest": "packages/chat.simplex.app/manifest.json"
     },
     "cn.com.langeasy.LangEasyLexis": {
       "version": "253516777438",
