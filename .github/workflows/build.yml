@@ -77,32 +77,32 @@ jobs:
           fi
 
           echo "===== Processing global ====="
-if [ -d global ]; then
-  for f in global/*; do
-    [ -e "$f" ] || continue
-    if [ -d "$f" ]; then
-      # 文件夹 -> out/global/ 文件夹
-      outdir="out/global/$(basename "$f")"
-      mkdir -p "$outdir"
+          if [ -d global ]; then
+            for f in global/*; do
+              [ -e "$f" ] || continue
+              if [ -d "$f" ]; then
+                # 文件夹 -> out/global/ 文件夹
+                outdir="out/global/$(basename "$f")"
+                mkdir -p "$outdir"
 
-      # 复制 PNG
-      for file in "$f"/*.png; do
-        [ -f "$file" ] || continue
-        cp "$file" "$outdir/"
-      done
+                # 复制 PNG
+                for file in "$f"/*.png; do
+                  [ -f "$file" ] || continue
+                  cp "$file" "$outdir/"
+                done
 
-      # SVG -> PNG
-      for file in "$f"/*.svg; do
-        [ -f "$file" ] || continue
-        name=$(basename "$file" .svg)
-        ~/.cargo/bin/resvg "$file" "$outdir/$name.png"
-      done
-    else
-      # 保留原来的散文件
-      cp "$f" out/global/
-    fi
-  done
-fi
+                # SVG -> PNG
+                for file in "$f"/*.svg; do
+                  [ -f "$file" ] || continue
+                  name=$(basename "$file" .svg)
+                  ~/.cargo/bin/resvg "$file" "$outdir/$name.png"
+                done
+              else
+                # 保留原来的散文件
+                cp "$f" out/global/
+              fi
+            done
+          fi
 
       # ----------------------------
       # 5️⃣ Generate manifests
