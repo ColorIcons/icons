@@ -1,6 +1,6 @@
 {
   "repo_version": 1,
-  "generated_at": 1775187421,
+  "generated_at": 1775190348,
   "global": {
     "version": "b59f2338ca3c",
     "files": {
@@ -76,7 +76,7 @@
       "manifest": "packages/com.twitter.android/manifest.json"
     },
     "com.netease.sky": {
-      "version": "379442f51d91",
+      "version": "d59583ce9ef8",
       "manifest": "packages/com.netease.sky/manifest.json"
     },
     "com.tmri.app.main": {
@@ -144,7 +144,7 @@
       "manifest": "packages/notion.id/manifest.json"
     },
     "com.netease.yyslscn": {
-      "version": "6439ed2b186b",
+      "version": "5fe2b49920a2",
       "manifest": "packages/com.netease.yyslscn/manifest.json"
     },
     "com.openai.chatgpt": {
@@ -200,7 +200,7 @@
       "manifest": "packages/dev.sasikanth.rss.reader/manifest.json"
     },
     "com.happyelements.AndroidAnimal": {
-      "version": "6b03d7acaf30",
+      "version": "20e675071e72",
       "manifest": "packages/com.happyelements.AndroidAnimal/manifest.json"
     },
     "com.dianping.v1": {
@@ -300,7 +300,7 @@
       "manifest": "packages/com.google.android.youtube/manifest.json"
     },
     "com.tencent.tmgp.sgame": {
-      "version": "cd470e03a319",
+      "version": "6d926f6e6b81",
       "manifest": "packages/com.tencent.tmgp.sgame/manifest.json"
     },
     "com.microsoft.todos": {
@@ -668,7 +668,7 @@
       "manifest": "packages/com.mubu.app/manifest.json"
     },
     "com.larus.nova": {
-      "version": "47f3e2c5f470",
+      "version": "ec0ff9081d62",
       "manifest": "packages/com.larus.nova/manifest.json"
     },
     "com.ytheekshana.deviceinfo": {

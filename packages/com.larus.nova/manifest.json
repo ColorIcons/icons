@@ -1,13 +1,6 @@
 {
-  "version": "47f3e2c5f470",
+  "version": "ec0ff9081d62",
   "files": [
-    {
-      "file": "game_app.png",
-      "type": "asset",
-      "required": true,
-      "sha256": "e63a077eaec76a8b1e2fd26c9e9d63374a26f1e595299ed8a44fcd32d95d26c9",
-      "size": 1123
-    },
     {
       "file": "monochrome.png",
       "type": "icon",
