@@ -3,6 +3,7 @@ name: Build and Deploy Icons
 on:
   push:
     branches: [master]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -85,6 +86,8 @@ jobs:
                 outdir="out/global/$(basename "$f")"
                 mkdir -p "$outdir"
 
+                echo ">> Package: $outdir"
+
                 # 复制 PNG
                 for file in "$f"/*.png; do
                   [ -f "$file" ] || continue
@@ -95,6 +98,7 @@ jobs:
                 for file in "$f"/*.svg; do
                   [ -f "$file" ] || continue
                   name=$(basename "$file" .svg)
+                  echo "Convert $file → $name.png"
                   ~/.cargo/bin/resvg "$file" "$outdir/$name.png"
                 done
               else
@@ -134,3 +138,15 @@ jobs:
           branch: gh-pages
           folder: ./out
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ----------------------------
+      # 9️⃣ Deploy to Cloudflare Pages
+      # ----------------------------
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: "colorosicons"
+          directory: "./out"
+          branch: "main"
