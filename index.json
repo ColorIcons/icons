@@ -1,6 +1,6 @@
 {
   "repo_version": 1,
-  "generated_at": 1775179527,
+  "generated_at": 1775184709,
   "global": {
     "version": "b59f2338ca3c",
     "files": {
@@ -35,6 +35,10 @@
     }
   },
   "packages": {
+    "app.lawnchair.lawnicons": {
+      "version": "d36df7fbd759",
+      "manifest": "packages/app.lawnchair.lawnicons/manifest.json"
+    },
     "cn.com.chsi.chsiapp": {
       "version": "5080670f1347",
       "manifest": "packages/cn.com.chsi.chsiapp/manifest.json"
@@ -46,6 +50,10 @@
     "cn.com.langeasy.LangEasyLexis": {
       "version": "253516777438",
       "manifest": "packages/cn.com.langeasy.LangEasyLexis/manifest.json"
+    },
+    "bin.mt.plus": {
+      "version": "0d9f81e6fe47",
+      "manifest": "packages/bin.mt.plus/manifest.json"
     }
   }
 }
