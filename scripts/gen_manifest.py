@@ -3,12 +3,11 @@
 import sys
 import json
 import hashlib
+import re
 from pathlib import Path
 
-# 支持 CI 指定目录，否则默认 packages/
 PACKAGES_DIR = Path(sys.argv[1] if len(sys.argv) > 1 else "packages")
 
-# 默认非必须文件
 OPTIONAL_FILES = {
     "mat.png",
     "monochrome.png",
@@ -16,6 +15,33 @@ OPTIONAL_FILES = {
     "recfg.png",
     "rec_night.png",
 }
+
+VARIANT_MAP = {
+    "mat.png": ("icon", "mat"),
+    "monochrome.png": ("icon", "monochrome"),
+    "recbg.png": ("icon", "light"),
+    "recfg.png": ("icon", "light"),
+    "rec_night.png": ("icon", "dark"),
+}
+
+SIZE_SUFFIX_RE = re.compile(r"^\d+x\d+$")
+
+
+def normalize_name(name: str) -> str:
+    """
+    将带尺寸的文件名归一化：
+    recbg_1x2.png -> recbg.png
+    monochrome_2x1.png -> monochrome.png
+    """
+    stem = Path(name).stem
+    parts = stem.split("_")
+
+    if len(parts) >= 2 and SIZE_SUFFIX_RE.match(parts[-1]):
+        base = "_".join(parts[:-1])
+    else:
+        base = stem
+
+    return f"{base}.png"
 
 
 def sha256_file(path: Path) -> str:
@@ -27,21 +53,13 @@ def sha256_file(path: Path) -> str:
 
 
 def detect_variant(name: str):
-    if name == "mat.png":
-        return ("icon", "mat")
-    if name == "monochrome.png":
-        return ("icon", "monochrome")
-    if name == "recbg.png":
-        return ("icon", "light_bg")
-    if name == "recfg.png":
-        return ("icon", "light_fg")
-    if name == "rec_night.png":
-        return ("icon", "dark_fg")
-    return ("asset", None)
+    base_name = normalize_name(name)
+    return VARIANT_MAP.get(base_name, ("asset", None))
 
 
 def is_required(name: str) -> bool:
-    return name not in OPTIONAL_FILES
+    base_name = normalize_name(name)
+    return base_name not in OPTIONAL_FILES
 
 
 def calc_version_from_dir(pkg_dir: Path) -> str:
@@ -63,6 +81,7 @@ def calc_version_from_dir(pkg_dir: Path) -> str:
         with open(f, "rb") as fp:
             while chunk := fp.read(8192):
                 h.update(chunk)
+
     return h.hexdigest()[:12]
 
 
@@ -86,8 +105,10 @@ def build_manifest(pkg_dir: Path):
             "sha256": sha256_file(file),
             "size": file.stat().st_size,
         }
+
         if variant:
             entry["variant"] = variant
+
         files.append(entry)
 
     manifest = {
@@ -106,8 +127,10 @@ def main():
     for pkg_dir in PACKAGES_DIR.iterdir():
         if not pkg_dir.is_dir():
             continue
+
         print(f"Generating manifest for {pkg_dir.name}")
         manifest = build_manifest(pkg_dir)
+
         out_file = pkg_dir / "manifest.json"
         with open(out_file, "w") as f:
             json.dump(manifest, f, indent=2, ensure_ascii=False)
