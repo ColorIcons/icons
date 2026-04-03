@@ -1,8 +1,8 @@
 {
   "repo_version": 1,
-  "generated_at": 1775190348,
+  "generated_at": 1775191764,
   "global": {
-    "version": "b59f2338ca3c",
+    "version": "1f1ce986b2b5",
     "files": {
       "icons-monorectangle": {
         "sha256": "34a4182890da457264df83de9dd4ee421d657b64024903821c4e79b39b50038b",
@@ -31,6 +31,101 @@
       "icons-darkrectangle": {
         "sha256": "278e4890505a59f1177f5c1912179c3cc6d2b739abb5feae08f6cdc69df99e97",
         "size": 158123
+      }
+    },
+    "packages": {
+      "com.coloros.gallery3d": {
+        "version": "03590afa5c7d",
+        "files": {
+          "day.png": {
+            "sha256": "1c32e27bb90ac2d0714bc420cd1ccef2ca205ff4acf9994773448a86bbd88c30",
+            "size": 43973
+          },
+          "mat.png": {
+            "sha256": "4efbda5e8a5977951d0e30ba9231cea5ced86e18feecde338648eaf83eef0c31",
+            "size": 34450
+          },
+          "monochrome.png": {
+            "sha256": "b56d2c3df364b1d7aa2a492e0134ade3e25656f578c480b44281ced160672509",
+            "size": 2736
+          },
+          "monochrome_1x2.png": {
+            "sha256": "df62cb5b0a9e0e9eb0d4bb71e62ff31ab2a7f1fabb0603c9a76bb8bbb7a0636b",
+            "size": 10214
+          },
+          "monochrome_2x1.png": {
+            "sha256": "aaab72892197f3dffdde5c3661e2738610f01c97100f6eefa6e825c864c48b00",
+            "size": 6856
+          },
+          "monochrome_2x2.png": {
+            "sha256": "03f0d1f961f7def35cab246ae4f64dec8586c4ca4ab35b8b65819d3de3aff5af",
+            "size": 19302
+          },
+          "nsd.png": {
+            "sha256": "a409ab60ae0f3cb4b7032c83725528e617fff5d31e44cac7b70dadb2de690e49",
+            "size": 3157
+          },
+          "outline.png": {
+            "sha256": "863f37b43c58964ce2384ffd75e0bb076c698bffc7643836d664aeba34c78038",
+            "size": 1072
+          },
+          "peb.png": {
+            "sha256": "5a3dfee940ec7b052b83b152784007369e427c4e2b522c965c3446cab6f404a0",
+            "size": 12372
+          },
+          "rec_night.png": {
+            "sha256": "f0dfc51bd119f5203f79035f2807099c6a5a367bee1a692415bb93ee71a6e1a5",
+            "size": 2903
+          },
+          "rec_night_1x2.png": {
+            "sha256": "6339058f9643b3f42775639c8e4bd59f7ad1c4df372b41b13f3c54ea9ad628a3",
+            "size": 24206
+          },
+          "rec_night_2x1.png": {
+            "sha256": "23587d9973edab8426fcc90f5ace6ac0a3bc4d60de7e5155e8ea0ada2143c2e3",
+            "size": 17118
+          },
+          "rec_night_2x2.png": {
+            "sha256": "4a4ef6a3e7e979fa5dff2da9d1fc16b57c515947d24ee5bc1f79c950e90764ae",
+            "size": 45878
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "e74327c276762429d039d64860b3638a03774e1a5ad5e11712388985b9021862",
+            "size": 2995
+          },
+          "recfg_1x2.png": {
+            "sha256": "2e062053172a1890088a32bfb085e67881aeaf0538ccb0b3715a6430a892097c",
+            "size": 24195
+          },
+          "recfg_2x1.png": {
+            "sha256": "e0e1f23e7d215a5e01bd75b5f1118b57af138c7c62921e3e7925c97c2ee5f3e9",
+            "size": 17109
+          },
+          "recfg_2x2.png": {
+            "sha256": "f8015a2407ccf60e867470191eac27f7e3af5dc3059ab298faf45277dec19cee",
+            "size": 45870
+          },
+          "search.png": {
+            "sha256": "3febc2a9dd1f14cb373f16cb35db40e8fba65d2fd511daa8b278c6426b8b3a93",
+            "size": 1116
+          }
+        }
       }
     }
   },
