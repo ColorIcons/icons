@@ -1,12 +1,12 @@
 {
-  "version": "0d9f81e6fe47",
+  "version": "c583a18ef026",
   "files": [
     {
       "file": "monochrome.png",
       "type": "icon",
       "required": false,
-      "sha256": "e7980df91c01a4801d879e194ee2a59d9ce5d4e23c3f49b59da7eebd0c61716b",
-      "size": 1562,
+      "sha256": "3b1edc2b2ca93f7999055c35e59c577dc3a3ba251654eb065b558d92512de3ac",
+      "size": 1531,
       "variant": "monochrome"
     }
   ]

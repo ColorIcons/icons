@@ -1,6 +1,6 @@
 {
   "repo_version": 1,
-  "generated_at": 1775184709,
+  "generated_at": 1775186086,
   "global": {
     "version": "b59f2338ca3c",
     "files": {
@@ -52,7 +52,7 @@
       "manifest": "packages/cn.com.langeasy.LangEasyLexis/manifest.json"
     },
     "bin.mt.plus": {
-      "version": "0d9f81e6fe47",
+      "version": "c583a18ef026",
       "manifest": "packages/bin.mt.plus/manifest.json"
     }
   }
