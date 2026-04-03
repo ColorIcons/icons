@@ -1,0 +1,148 @@
+{
+  "version": "ac59cba501f0",
+  "files": [
+    {
+      "file": "mat.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "215fd839fa4c25858af9958c0eea3b8c6b7a2d4ce322d7608f0d56a88b6a4f76",
+      "size": 1682,
+      "variant": "mat"
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a084f905acb9882b4fde91816ceda28e754f2468731db247d7d4414c498e21e4",
+      "size": 711,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "236b4656d284b3d379d339f21ec2832d4966695d9a037a1fcbc95a4dd31f7f11",
+      "size": 506,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "07c1d80ae8623aef78412b292d50f35670d6b16474ea73992da88b1500dd7c21",
+      "size": 534,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "b461748d32ff0e98216bf719a9302bdc328f84849fe0fcfa404752888f1f2f33",
+      "size": 995,
+      "variant": "monochrome"
+    },
+    {
+      "file": "outline.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "863f37b43c58964ce2384ffd75e0bb076c698bffc7643836d664aeba34c78038",
+      "size": 1072
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "16f9ff519105625f6d6382cbee8da28cbaa6984eb96b685eb0b922b900dd7e40",
+      "size": 883,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "f786578700a9468f1b0035b8c697c99df8ba5fad8e8d963beecfc5223e71550a",
+      "size": 2590,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "ab5bddd2a0f6ecf6c061405f651d73f4fe69ddfa7d2a94ee52f12db82de75985",
+      "size": 1523,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "31c17694d0e06ab91e7d1dae059466039ab38f135716aabb4eea393b5197fef2",
+      "size": 3723,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "c1d44c1cd3ba02fe5cde22fae06ff0586012edf244ae8e29dcc2d1e4f129a3f6",
+      "size": 885,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "610b4ade42358fdc77f02de5d257f4e253e5c70c704d958154f1277e6bae46b4",
+      "size": 2588,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2654427090f107f025246b1f88815c688ead53be77248e808a32c1931917b5c5",
+      "size": 1520,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "40acd82bcbc02e86c26f8b1edc02c4b5a14afe92ee0cf3cb6afd16ffd634fb25",
+      "size": 3721,
+      "variant": "light"
+    }
+  ]
+}

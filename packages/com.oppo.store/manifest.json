@@ -1,0 +1,169 @@
+{
+  "version": "a7c4df6a7275",
+  "files": [
+    {
+      "file": "earn_integral.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "8cd3afb438fb96fd57d09921e65b6a5af5a519e7bf314212975c0f89355ab767",
+      "size": 1081
+    },
+    {
+      "file": "mat.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "5acd9f604438ceea568519c25f8904b932b1f0dfcecec11141c3cab27c89a816",
+      "size": 6514,
+      "variant": "mat"
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "caa404a2c8dd5d558f7d80a12676ca167703bd7d55993208712c91e7508c2581",
+      "size": 1511,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "71aaa0c3fb8aaed5c12b5ac9a79a667b5cb21b0189b9bf843dcbec576670c49d",
+      "size": 1722,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2b4bcaf88d7d5360af031aa585f344f53383d55d17eae1ebea66d3a86e47829a",
+      "size": 3104,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "b7fb5ea1f2314d469ccd4ccec2b3833d7a0981c101a46b4ccd635176ecbbcd4f",
+      "size": 4124,
+      "variant": "monochrome"
+    },
+    {
+      "file": "nsd.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "ab7467e5964cccd8807633c58a4f3f55dd93cb9d34b8f13b4cbfcca7cc3d215e",
+      "size": 3931
+    },
+    {
+      "file": "peb.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "c48ca1fa90703c108dafa00369803a20454a392335c65f757eb318d2b10b1023",
+      "size": 12031
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "229d3b45d928ab52d3845aff52437993ca7b4181578421e1bba1a5bc6935549b",
+      "size": 2229,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "61480158923e5da24624a26af78c0687101394924801b3d9f590d15d9a7f80bc",
+      "size": 5263,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "3105e49118080e4ed6b3512848d516e15388717ddbcbc8c16f4dcd918f2201a2",
+      "size": 6677,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "027689bf7b5e5d76cb1860e42cb4ce213bce24f308f304d2e8b678518662d30f",
+      "size": 9944,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "4ea10242ac6128f91a91709c0969f9e17b2e5fde85987ece909a11ad177fb646",
+      "size": 2176,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "c610a3fb48d07841bd15b2a875978fe470deb3e26d95ebf713496d7eb8191054",
+      "size": 5229,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fd85643f3cdb237dc7588e796c13770e6bee040a5b785a7ca324a187fed88ee0",
+      "size": 6652,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "b5b8717c0764ec3336ff688c9cf72c90d1548b17b468cc96fbb00e48222573bf",
+      "size": 9949,
+      "variant": "light"
+    },
+    {
+      "file": "search_product.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "3d7515553ce9e9036dbe34525f47494e9031014b3a4299c4a81771ca272f051f",
+      "size": 1617
+    }
+  ]
+}

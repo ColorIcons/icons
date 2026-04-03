@@ -1,0 +1,148 @@
+{
+  "version": "7d8222a857d8",
+  "files": [
+    {
+      "file": "mat.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "7bd13969046d61810366fdc2c3e307dbe146cbcce99b604a4311d3f3a96c9908",
+      "size": 15636,
+      "variant": "mat"
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "aff1d6c7d17264b41a93580da4b9f93604adeb2e57a558593641166a825d776e",
+      "size": 4008,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "e98205218fa62c75d809aff4ee28c4d013f094edf667ea4d2c2c01092f84b91d",
+      "size": 6892,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "ed96899f96459b025dd354936a8ae2288746a807dd5083450c6071b66e4f89f8",
+      "size": 8048,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "f853c0414b3ae55b0da35a97f36153afdacf38081613a7661ef21d929ae52f43",
+      "size": 14423,
+      "variant": "monochrome"
+    },
+    {
+      "file": "outline.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "863f37b43c58964ce2384ffd75e0bb076c698bffc7643836d664aeba34c78038",
+      "size": 1072
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "41b5c42618736daff263e8998063f8f0205f6d061ce0d765a83f23b542583d9c",
+      "size": 4552,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2aab383a4d23998b303dd860c48f9d8c74ad48ed4d992261155c323dc63ffa71",
+      "size": 8627,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "70160567ce646f3ed3acd897a6d0ef3ae2a686ab6b68f41b8e162eb5e8034f57",
+      "size": 8661,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "824d7bc0e842d76fc642cd595278032b689b26aa16f8fa8298352d8d37f295f0",
+      "size": 16837,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "afc986e115cdb7ab67b32d5e181e0214540fcb774e62281d694aaaf3c6615343",
+      "size": 4637,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "53ba2183a6c973ccee92a83c08e80330b28747b91d0eeac06764f6ffb696afcf",
+      "size": 8523,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "552f773296dcc35087cabbe060f8c2c50db4bf8bc974c8f04de69d97337b1d20",
+      "size": 8556,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fef7208b083f9dc178216b4ad172ef4e62bb899689b337da32554889480bb359",
+      "size": 16602,
+      "variant": "light"
+    }
+  ]
+}

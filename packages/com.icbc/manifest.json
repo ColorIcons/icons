@@ -1,0 +1,148 @@
+{
+  "version": "b4ef6f459a29",
+  "files": [
+    {
+      "file": "mat.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "90c3a4288e3a59142070046f7550c36fbb6642adea898701641396132e14f427",
+      "size": 10368,
+      "variant": "mat"
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2d6bf57477ef1b813cb68e587a05e81c11dd1075e2b2e08f9b8ba2149010ae32",
+      "size": 2514,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "e75bcf26c5d55982bdb00122cf74f0d8496a6d57caf11b9f2509d94f86b90b5c",
+      "size": 1974,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "0f0aabdd7a4948360d7961c89b8eea8f7dbd9d807cc9db431e4a9437df8d74f5",
+      "size": 2156,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "ae69e7cd4c838e54b350f71cde57ba79c1853d00a2e6faa48f6d81af85d07410",
+      "size": 4287,
+      "variant": "monochrome"
+    },
+    {
+      "file": "nsd.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "45df5569ecc38795825a9a9f198bf245091d314cb250df351e88965aa784d222",
+      "size": 6319
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "5e74e8f7d8859ff6509ce623c4e9d44660aa4a0b5dad1315c63229f63afd0dc9",
+      "size": 3316,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fb971896397404d34f14a31d2f9d4eb930a81019985f748181d82f92b0cc7a02",
+      "size": 6689,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "c14ad40ec312ea65e9ceaae4ab7216d2181482dc1a9012bbbb1cbac83029ac87",
+      "size": 5636,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "c4d01d04eb9829ce22089d9edd83971cc7bf0ceec6ac0c2d0f0ca42e2eb9718e",
+      "size": 11636,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "02fa09417bb92bd6d405939e36e401a55bdf5ad320cf87745a1fe3304f991f8c",
+      "size": 3239,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "0e74a02a333d701084388eb88b8adb11b40b549600411d7eda3c77f75d031b36",
+      "size": 6507,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "6ba0087c4c634815d7ec7e5c41fb64bdb1d8cce099605e1ed25935dd75ffc21b",
+      "size": 5513,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "20ededa4092523233eb9676008aeac16e48d851d60ec58577dd43b5ae12dbf5c",
+      "size": 11513,
+      "variant": "light"
+    }
+  ]
+}

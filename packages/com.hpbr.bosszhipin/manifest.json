@@ -1,0 +1,148 @@
+{
+  "version": "355652bea132",
+  "files": [
+    {
+      "file": "mat.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "b3084d3700b8e620aa92a03a7aa490090bec332c90fad299b187a864bbad7d88",
+      "size": 20684,
+      "variant": "mat"
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "0fbd445020746e7940916e0a5c0ae4560ed84dd8119b6fb5ecea830246d17527",
+      "size": 1682,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a6832359e80de803de2ebb8bf21f62d2f1ba6890a68c7c8404ab87de9f7b2e79",
+      "size": 2177,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "c90a046b2fb2d3d4770685fc7d7f3e3b48744dff8183b2102aac0254f3006e34",
+      "size": 2336,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "6c82023fa12cb9293e890ec4f1a470e61cd76791cfbcc5820430abb956f0539c",
+      "size": 4398,
+      "variant": "monochrome"
+    },
+    {
+      "file": "nsd.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "9410acfe54900fe5a4626b9f5256c5eae56ec7f2f97bb56af2da2508d5ae0f21",
+      "size": 4115
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "7907b8fe6b3cb3b602f8a575502b9e6db86823b3a6e21b683b36e790a8c9fff8",
+      "size": 3858,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "733bcb79eff169e515ca46a5ecb413fa3852b7d851fac79edeeda5b3b9727dee",
+      "size": 6953,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2d93eed7311353cfdc6961603eed17f72d5e6a5dbff5226fa2eadf4d1f88d6a9",
+      "size": 6105,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "247b76510df1cbc789dd1fb74c916104cc6df76725a0854cd803e1d7e375e51b",
+      "size": 12265,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fea84820d5fc1f787df144d11116703da19ce6af932d05f75935480895d45203",
+      "size": 3845,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "abc9ea1c513a4f1d33e2d5f48af4cd6e106a95c71cba87228dafe0dbf5052e58",
+      "size": 6939,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "ddeb7ec887e58ac6d17122d97dfe87597639dae2672356c26f15931c37fc0e3d",
+      "size": 6090,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "ff94cfb3a1b4b46532665ab49d800fa6bc35faa3ee7976b75a155aec5c3bfacc",
+      "size": 12199,
+      "variant": "light"
+    }
+  ]
+}

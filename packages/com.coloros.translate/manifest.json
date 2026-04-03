@@ -1,0 +1,161 @@
+{
+  "version": "d352ac2153c7",
+  "files": [
+    {
+      "file": "dialog_translate.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "7ceaad89eae9a10be5f508e006acbb4bf6065bb3312d6926d62522a1338c0e12",
+      "size": 1321
+    },
+    {
+      "file": "id_photo.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "b1e297531a60a71f06c39c450621b9a7e3a7d8c7bbe74dd45ac5d20a08b94123",
+      "size": 1303
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "e2ecc63b0d7700d6ff3842a4e1f1e125cc06e2fe3d00f09c3f587119458241e2",
+      "size": 1555,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "056c0b3ed4c1837583d2799edc781ec1a58724e6e62461750683e3fab1d219ec",
+      "size": 2883,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "3944211f042c9f4e22fcbfe3a7d7172a412bdf6bf34173c9ae9eb8fecfb3ecf4",
+      "size": 3617,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "6cf96cd52f3fa5a62cdd24d78651fc1f43108f175b58bb5985323cea248fd226",
+      "size": 6583,
+      "variant": "monochrome"
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a77a797ac9ffa1e5dd1500a67f79a00dec87fd296de9bc9c937bf5399c4b93be",
+      "size": 3419,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "e3cc34badfd2bed60328c559263235700a4f16616240412c2db74c0d5f3d3dde",
+      "size": 7856,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "6f15d245b94c9006a6d23af0042be5de7dff6400e670e72d0ea3fa8147753209",
+      "size": 7142,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a676d7f5806cda7f6d9d863b3bae0be7edb571a6d3ffd29b92dfdb809643aeba",
+      "size": 13700,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2b57e58c17f6a962628e233e97df66e8c596ab62ae3611adaaa247e0e5dbd5a1",
+      "size": 3407,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "c74323df2725772021d30fe29caab63f8b364cd44b6fa07221cff306ef58f0dc",
+      "size": 7793,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "e8a4d585fae9c2eb63d5e41a8beb4741d12629692d4fd2d2c89c6c960b001267",
+      "size": 7154,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "93cccc7a33d11f99f12e29c7defaacf50821014989376cba2c6051b759b6433c",
+      "size": 13684,
+      "variant": "light"
+    },
+    {
+      "file": "simultaneous.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "53891a08915ff65439be9f91392687b57329c207bb84f99fa22ef659fe2b858d",
+      "size": 1305
+    },
+    {
+      "file": "text_translate.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "6719abe81c5c1ba25efb8a5d656ec12b1a0703ab9bfb574b724df17310ecca9c",
+      "size": 1509
+    }
+  ]
+}

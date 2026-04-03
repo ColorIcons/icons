@@ -1,0 +1,140 @@
+{
+  "version": "47f3e2c5f470",
+  "files": [
+    {
+      "file": "game_app.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "e63a077eaec76a8b1e2fd26c9e9d63374a26f1e595299ed8a44fcd32d95d26c9",
+      "size": 1123
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a4c77816d5391d51581e64a7aefad8bf040e5792cb0a6baf99e744e00e4a597f",
+      "size": 3260,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "ec58ca0e63aace2107f9600d4ba0557d1303572fe79364767ee82ca0b6e350a2",
+      "size": 10183,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "47d3e8f398f924cd1d875be5d197eca92294558d8a2c8400c1ca4136dac97f9f",
+      "size": 11882,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "4bb0cf79d0c3d2a36e67b153f119177d9692b4e7ddf355116edf3feb8b5570ee",
+      "size": 32637,
+      "variant": "monochrome"
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "7a3d73ade82bacd2e49648fc9944a629672f3a31bf803b3545f7af74f469ec2b",
+      "size": 3334,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "4daaa6fb765a60924ac062e3210403b78e96ae0379e03ddfe87892e23255387b",
+      "size": 28355,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "1429cd3194d23463ad261745ec986a4fee2852aecc81d1fbdf558bfe32dd4d8a",
+      "size": 30356,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "ba50ab25d3785aaa3d15372a8309f6b4fdc189ffc2f72654067e304e50164b2c",
+      "size": 81582,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "1662e462ef0edd318a6901d345bebc9e59df13bf03b7ac07b42737967ba46189",
+      "size": 3457,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "5294b42803906e3c2dfe13f0fdbb2198b3b022956f717164445ce65daa0fe152",
+      "size": 28077,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "df83fda59146e38cdb84500720827114f4b9a92cb55bf0289cb6834801e2cc16",
+      "size": 29782,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "659fc510dca9d31fc8221a43fd6c7f31745b92ac106380e0303454a17bab68e2",
+      "size": 81529,
+      "variant": "light"
+    }
+  ]
+}

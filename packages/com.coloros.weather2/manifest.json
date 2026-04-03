@@ -1,0 +1,190 @@
+{
+  "version": "acfde76c9132",
+  "files": [
+    {
+      "file": "15days_weather.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "3d46fde2d64ca4cdc6baf618e9e7d73758328e8801645e71df29e1f2e29d9042",
+      "size": 1604
+    },
+    {
+      "file": "air_quality.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "f1430775b292d1950f99d95aee78b1ecefb173f80adcb71fa35b3f8c1ba2f5d8",
+      "size": 1240
+    },
+    {
+      "file": "day.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "3e35198a4b77713fc082040226a41079a9987e2b3bbcb2b73f99b868a3fff273",
+      "size": 50013
+    },
+    {
+      "file": "life_advice.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "07917745577d68af60babdc2f05743f1d772c0cd90763aa14f6e0bae7b81e5bb",
+      "size": 1308
+    },
+    {
+      "file": "live_weather.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "3a3542438d8685cddde087116987868cfdd31edf239ec75c883a66590f697ee7",
+      "size": 1094
+    },
+    {
+      "file": "mat.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "f9150f60ed54e823d92f0c493ca595a7a8c7c4640800c7966d3056923b064019",
+      "size": 36665,
+      "variant": "mat"
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "918525a2d184ba541ba8b963c464328e021cfb27f4fd5511091b0b28aaa23c71",
+      "size": 910,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "7c7a27b42964b3e2ba212347ac0bd7c443195647e9abe5fa8e9765ca8430e40c",
+      "size": 1424,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "480bfb4e92f2042e6f88d87817668e5fe329091290b3b015ab56202e98dd3ac8",
+      "size": 1535,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2af4ecc5af1b85e337ddd04dcb1b592379df7e8141b0cdc90e18accab31cb456",
+      "size": 2868,
+      "variant": "monochrome"
+    },
+    {
+      "file": "nsd.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "cba4b442adfb158076d6d844814e9194c93c5ea3af78e70ca99eca222dcc39e1",
+      "size": 3919
+    },
+    {
+      "file": "peb.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "8c03c59e9d40f251f8b50ae0987a10cf3a16a7db6df0d7c576bb70ea5e9b9c48",
+      "size": 10738
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "31b1f0fba7e80ae75dcbfb87f3c3d4a4e36f081a3487e2c9bb1521d9c348e8b3",
+      "size": 2107,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "53ce56f2efc41be8f246c180c5d0a74b45f7b1ecfea792c21ed3aceca993ab34",
+      "size": 5166,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "2521815b7ab6a7268d2a8b648384a1069d3d894cb68ee2cad244cf8a3e3a492b",
+      "size": 4035,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "bfda4692e8d605466d82cd1e84aa2e63c2186652b963f1c1fee286fb68a00e8c",
+      "size": 8339,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "6f7a454bae121316302b6adf259a83422c88d475e6e8e0a2f9b719513a6cca6d",
+      "size": 2127,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "55a4d7cf9e2d8d13b7f5a6534b43ba1dd180ed08729dc1d6a103b86082fb9f84",
+      "size": 5147,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "4ba021dec9394b9a8a529a272faec9c2f15071cd690020acc5f35ef28eda5794",
+      "size": 4045,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "5c1023ef90fe3a207e138944075cd7f077e409ee81c3961948b2a26a0463123e",
+      "size": 8345,
+      "variant": "light"
+    }
+  ]
+}

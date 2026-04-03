@@ -1,6 +1,6 @@
 {
   "repo_version": 1,
-  "generated_at": 1775187130,
+  "generated_at": 1775187421,
   "global": {
     "version": "b59f2338ca3c",
     "files": {
@@ -35,29 +35,693 @@
     }
   },
   "packages": {
+    "com.coloros.soundrecorder": {
+      "version": "c87796830904",
+      "manifest": "packages/com.coloros.soundrecorder/manifest.json"
+    },
+    "cc.forestapp": {
+      "version": "58435ad1d02e",
+      "manifest": "packages/cc.forestapp/manifest.json"
+    },
+    "com.oneplus.bbs": {
+      "version": "f2a9d24454da",
+      "manifest": "packages/com.oneplus.bbs/manifest.json"
+    },
+    "com.ct.client": {
+      "version": "8eb3d554780f",
+      "manifest": "packages/com.ct.client/manifest.json"
+    },
+    "com.dergoogler.mmrl": {
+      "version": "578f0dccfe07",
+      "manifest": "packages/com.dergoogler.mmrl/manifest.json"
+    },
+    "com.coloros.translate": {
+      "version": "d352ac2153c7",
+      "manifest": "packages/com.coloros.translate/manifest.json"
+    },
+    "com.yfoo.listen": {
+      "version": "8cd90536bfe5",
+      "manifest": "packages/com.yfoo.listen/manifest.json"
+    },
+    "com.coderstory.toolkit": {
+      "version": "c56e309fce9d",
+      "manifest": "packages/com.coderstory.toolkit/manifest.json"
+    },
+    "com.suqi8.oshin": {
+      "version": "281fc2874ca8",
+      "manifest": "packages/com.suqi8.oshin/manifest.json"
+    },
+    "com.twitter.android": {
+      "version": "b1425ee68934",
+      "manifest": "packages/com.twitter.android/manifest.json"
+    },
+    "com.netease.sky": {
+      "version": "379442f51d91",
+      "manifest": "packages/com.netease.sky/manifest.json"
+    },
+    "com.tmri.app.main": {
+      "version": "0a2d91aaf1de",
+      "manifest": "packages/com.tmri.app.main/manifest.json"
+    },
+    "ru.tech.imageresizershrinker": {
+      "version": "d44baf995e4c",
+      "manifest": "packages/ru.tech.imageresizershrinker/manifest.json"
+    },
     "app.lawnchair.lawnicons": {
       "version": "d36df7fbd759",
       "manifest": "packages/app.lawnchair.lawnicons/manifest.json"
     },
+    "com.github.rimuruchan.kernelflasher": {
+      "version": "f36903076bc8",
+      "manifest": "packages/com.github.rimuruchan.kernelflasher/manifest.json"
+    },
+    "com.oneplus.member": {
+      "version": "ac59cba501f0",
+      "manifest": "packages/com.oneplus.member/manifest.json"
+    },
+    "cn.com.langeasy.EasyListen": {
+      "version": "96d639e5ac67",
+      "manifest": "packages/cn.com.langeasy.EasyListen/manifest.json"
+    },
+    "com.heytap.health": {
+      "version": "8b15ad0a6051",
+      "manifest": "packages/com.heytap.health/manifest.json"
+    },
+    "com.wangc.bill": {
+      "version": "c6a5eacc96db",
+      "manifest": "packages/com.wangc.bill/manifest.json"
+    },
+    "com.dragon.read": {
+      "version": "ae6c536ee7ea",
+      "manifest": "packages/com.dragon.read/manifest.json"
+    },
+    "com.coloros.calculator": {
+      "version": "6babd44b909c",
+      "manifest": "packages/com.coloros.calculator/manifest.json"
+    },
+    "org.localsend.localsend_app": {
+      "version": "105fba7c9a30",
+      "manifest": "packages/org.localsend.localsend_app/manifest.json"
+    },
+    "com.alibaba.android.rimet": {
+      "version": "f41ce1351c6c",
+      "manifest": "packages/com.alibaba.android.rimet/manifest.json"
+    },
+    "com.netease.wyclx.nearme.gamecenter": {
+      "version": "bd4bb827e4b4",
+      "manifest": "packages/com.netease.wyclx.nearme.gamecenter/manifest.json"
+    },
+    "com.ss.android.ugc.aweme.lite": {
+      "version": "d2081bf534b6",
+      "manifest": "packages/com.ss.android.ugc.aweme.lite/manifest.json"
+    },
+    "com.yodo1.OPPO_01.SkiSafari": {
+      "version": "9df867904994",
+      "manifest": "packages/com.yodo1.OPPO_01.SkiSafari/manifest.json"
+    },
+    "notion.id": {
+      "version": "dc34e777d2fd",
+      "manifest": "packages/notion.id/manifest.json"
+    },
+    "com.netease.yyslscn": {
+      "version": "6439ed2b186b",
+      "manifest": "packages/com.netease.yyslscn/manifest.json"
+    },
+    "com.openai.chatgpt": {
+      "version": "c672c33afe20",
+      "manifest": "packages/com.openai.chatgpt/manifest.json"
+    },
+    "com.max.xiaoheihe": {
+      "version": "56bc823b3971",
+      "manifest": "packages/com.max.xiaoheihe/manifest.json"
+    },
+    "com.heytap.themestore": {
+      "version": "97bda01b5e2b",
+      "manifest": "packages/com.heytap.themestore/manifest.json"
+    },
+    "com.icbc": {
+      "version": "b4ef6f459a29",
+      "manifest": "packages/com.icbc/manifest.json"
+    },
+    "top.qwq2333.nullgram": {
+      "version": "9565e8d26fe1",
+      "manifest": "packages/top.qwq2333.nullgram/manifest.json"
+    },
+    "com.taobao.taobao": {
+      "version": "b72424b5da26",
+      "manifest": "packages/com.taobao.taobao/manifest.json"
+    },
+    "web1n.stopapp": {
+      "version": "498576ebeda0",
+      "manifest": "packages/web1n.stopapp/manifest.json"
+    },
+    "com.sina.weibo": {
+      "version": "9b45c2138800",
+      "manifest": "packages/com.sina.weibo/manifest.json"
+    },
+    "com.luckyzyx.luckytool": {
+      "version": "37639b04be85",
+      "manifest": "packages/com.luckyzyx.luckytool/manifest.json"
+    },
+    "com.lingkou.leetcode": {
+      "version": "9d2101e3ff39",
+      "manifest": "packages/com.lingkou.leetcode/manifest.json"
+    },
+    "info.muge.appshare": {
+      "version": "0fafe1e107fc",
+      "manifest": "packages/info.muge.appshare/manifest.json"
+    },
     "cn.com.chsi.chsiapp": {
-      "version": "5080670f1347",
+      "version": "a5d22ad20e5f",
       "manifest": "packages/cn.com.chsi.chsiapp/manifest.json"
     },
+    "dev.sasikanth.rss.reader": {
+      "version": "6dd0625c8d72",
+      "manifest": "packages/dev.sasikanth.rss.reader/manifest.json"
+    },
+    "com.happyelements.AndroidAnimal": {
+      "version": "6b03d7acaf30",
+      "manifest": "packages/com.happyelements.AndroidAnimal/manifest.json"
+    },
+    "com.dianping.v1": {
+      "version": "26774ea56f24",
+      "manifest": "packages/com.dianping.v1/manifest.json"
+    },
+    "org.handmadeideas.floccus": {
+      "version": "31c2af02bd55",
+      "manifest": "packages/org.handmadeideas.floccus/manifest.json"
+    },
     "cn.com.bmac.nfc": {
-      "version": "22d2e34fa2e8",
+      "version": "13204976dfb2",
       "manifest": "packages/cn.com.bmac.nfc/manifest.json"
+    },
+    "ru.startandroid.smsactivate": {
+      "version": "341c78559c7e",
+      "manifest": "packages/ru.startandroid.smsactivate/manifest.json"
+    },
+    "cn.myflv.monitor.noactive": {
+      "version": "36c15515a6a7",
+      "manifest": "packages/cn.myflv.monitor.noactive/manifest.json"
+    },
+    "cn.toside.music.mobile": {
+      "version": "d7d7e977ba7b",
+      "manifest": "packages/cn.toside.music.mobile/manifest.json"
+    },
+    "com.follow.clash": {
+      "version": "8fa1a5b14fab",
+      "manifest": "packages/com.follow.clash/manifest.json"
+    },
+    "com.umetrip.android.msky.app": {
+      "version": "e4f92a2a14a2",
+      "manifest": "packages/com.umetrip.android.msky.app/manifest.json"
+    },
+    "io.legado.app.release": {
+      "version": "fc627b53e48c",
+      "manifest": "packages/io.legado.app.release/manifest.json"
+    },
+    "com.valvesoftware.android.steam.community": {
+      "version": "0d241b50d1cf",
+      "manifest": "packages/com.valvesoftware.android.steam.community/manifest.json"
+    },
+    "me.ash.reader": {
+      "version": "6f13fbe33700",
+      "manifest": "packages/me.ash.reader/manifest.json"
+    },
+    "com.example.piliplus": {
+      "version": "7a14bb0d7148",
+      "manifest": "packages/com.example.piliplus/manifest.json"
+    },
+    "gr.nikolasspyr.integritycheck": {
+      "version": "21e25ddd3209",
+      "manifest": "packages/gr.nikolasspyr.integritycheck/manifest.json"
+    },
+    "org.flos.phira": {
+      "version": "6bf9a0219a85",
+      "manifest": "packages/org.flos.phira/manifest.json"
+    },
+    "com.daimajia.gold": {
+      "version": "8d7915117d93",
+      "manifest": "packages/com.daimajia.gold/manifest.json"
+    },
+    "com.paypal.android.p2pmobile": {
+      "version": "62eca2a09f0f",
+      "manifest": "packages/com.paypal.android.p2pmobile/manifest.json"
+    },
+    "com.nearme.gamecenter": {
+      "version": "0342fa0c4799",
+      "manifest": "packages/com.nearme.gamecenter/manifest.json"
+    },
+    "com.github.android": {
+      "version": "ba675e96f391",
+      "manifest": "packages/com.github.android/manifest.json"
+    },
+    "com.PigeonGames.PhigrosGlobal": {
+      "version": "592a7adcfbe9",
+      "manifest": "packages/com.PigeonGames.PhigrosGlobal/manifest.json"
+    },
+    "com.android.chrome": {
+      "version": "51c9246d2e6c",
+      "manifest": "packages/com.android.chrome/manifest.json"
+    },
+    "com.rayark.deemo2": {
+      "version": "f507e2ac735e",
+      "manifest": "packages/com.rayark.deemo2/manifest.json"
+    },
+    "com.sinovatech.unicom.ui": {
+      "version": "342f324300d8",
+      "manifest": "packages/com.sinovatech.unicom.ui/manifest.json"
+    },
+    "com.kroegerama.appchecker": {
+      "version": "93d8891bc323",
+      "manifest": "packages/com.kroegerama.appchecker/manifest.json"
+    },
+    "com.google.android.youtube": {
+      "version": "50cfe9a3d19b",
+      "manifest": "packages/com.google.android.youtube/manifest.json"
+    },
+    "com.tencent.tmgp.sgame": {
+      "version": "cd470e03a319",
+      "manifest": "packages/com.tencent.tmgp.sgame/manifest.json"
+    },
+    "com.microsoft.todos": {
+      "version": "14b03507b7c5",
+      "manifest": "packages/com.microsoft.todos/manifest.json"
+    },
+    "com.google.android.apps.authenticator2": {
+      "version": "2351beb6168d",
+      "manifest": "packages/com.google.android.apps.authenticator2/manifest.json"
+    },
+    "me.ele": {
+      "version": "37afd75eb190",
+      "manifest": "packages/me.ele/manifest.json"
+    },
+    "top.hookvip.pro": {
+      "version": "12114498e8b3",
+      "manifest": "packages/top.hookvip.pro/manifest.json"
+    },
+    "tv.danmaku.bili": {
+      "version": "f905f8f44aab",
+      "manifest": "packages/tv.danmaku.bili/manifest.json"
+    },
+    "cn.yonghui.hyd": {
+      "version": "bc1eccda2cee",
+      "manifest": "packages/cn.yonghui.hyd/manifest.json"
+    },
+    "com.quark.browser": {
+      "version": "797cfd1a7f68",
+      "manifest": "packages/com.quark.browser/manifest.json"
+    },
+    "com.redteamobile.roaming": {
+      "version": "1f5041086be5",
+      "manifest": "packages/com.redteamobile.roaming/manifest.json"
+    },
+    "com.google.android.inputmethod.latin": {
+      "version": "8f44c414fbd8",
+      "manifest": "packages/com.google.android.inputmethod.latin/manifest.json"
+    },
+    "com.heytap.yoli": {
+      "version": "ec79844628f6",
+      "manifest": "packages/com.heytap.yoli/manifest.json"
+    },
+    "com.kmxs.reader": {
+      "version": "f4f8df667601",
+      "manifest": "packages/com.kmxs.reader/manifest.json"
+    },
+    "com.sonelli.juicessh": {
+      "version": "c73e7b08b20a",
+      "manifest": "packages/com.sonelli.juicessh/manifest.json"
+    },
+    "idm.internet.download.manager": {
+      "version": "dc94c53df196",
+      "manifest": "packages/idm.internet.download.manager/manifest.json"
+    },
+    "com.salt.music": {
+      "version": "43dba17c48a4",
+      "manifest": "packages/com.salt.music/manifest.json"
+    },
+    "com.steampy.app": {
+      "version": "ad9131f2e74c",
+      "manifest": "packages/com.steampy.app/manifest.json"
+    },
+    "com.taptap.global": {
+      "version": "c532673f8e79",
+      "manifest": "packages/com.taptap.global/manifest.json"
+    },
+    "com.Qunar": {
+      "version": "48c22e4538a6",
+      "manifest": "packages/com.Qunar/manifest.json"
+    },
+    "com.unionpay": {
+      "version": "7d8222a857d8",
+      "manifest": "packages/com.unionpay/manifest.json"
+    },
+    "com.bug.hookvip": {
+      "version": "1e762914df05",
+      "manifest": "packages/com.bug.hookvip/manifest.json"
+    },
+    "cn.cyberIdentity.certification": {
+      "version": "980da4117dae",
+      "manifest": "packages/cn.cyberIdentity.certification/manifest.json"
+    },
+    "com.omarea.vtools": {
+      "version": "9d5ed9fcd81f",
+      "manifest": "packages/com.omarea.vtools/manifest.json"
+    },
+    "com.oppo.store": {
+      "version": "a7c4df6a7275",
+      "manifest": "packages/com.oppo.store/manifest.json"
+    },
+    "li.songe.gkd": {
+      "version": "f49fd9064d35",
+      "manifest": "packages/li.songe.gkd/manifest.json"
+    },
+    "com.jingdong.app.mall": {
+      "version": "08d6b6dd1691",
+      "manifest": "packages/com.jingdong.app.mall/manifest.json"
+    },
+    "com.netease.cloudmusic": {
+      "version": "db03b8a7e143",
+      "manifest": "packages/com.netease.cloudmusic/manifest.json"
+    },
+    "com.shizi.tool.p3": {
+      "version": "25d369dfb801",
+      "manifest": "packages/com.shizi.tool.p3/manifest.json"
+    },
+    "com.taptap": {
+      "version": "d7d77c82bb0d",
+      "manifest": "packages/com.taptap/manifest.json"
+    },
+    "com.mmbox.xbrowser": {
+      "version": "57844c865aa6",
+      "manifest": "packages/com.mmbox.xbrowser/manifest.json"
+    },
+    "com.coloros.shortcuts": {
+      "version": "f7aac124cb14",
+      "manifest": "packages/com.coloros.shortcuts/manifest.json"
+    },
+    "com.PigeonGames.Rizline": {
+      "version": "10a9266aa025",
+      "manifest": "packages/com.PigeonGames.Rizline/manifest.json"
+    },
+    "com.MobileTicket": {
+      "version": "e77ecdc64700",
+      "manifest": "packages/com.MobileTicket/manifest.json"
+    },
+    "com.xayah.databackup.foss": {
+      "version": "703e1633d903",
+      "manifest": "packages/com.xayah.databackup.foss/manifest.json"
+    },
+    "com.netease.gl": {
+      "version": "09efadf3ebfe",
+      "manifest": "packages/com.netease.gl/manifest.json"
+    },
+    "com.tencent.mm": {
+      "version": "3b2e49700ff3",
+      "manifest": "packages/com.tencent.mm/manifest.json"
+    },
+    "com.autonavi.minimap": {
+      "version": "66fb3118d1c6",
+      "manifest": "packages/com.autonavi.minimap/manifest.json"
+    },
+    "com.coloros.backuprestore": {
+      "version": "a382382bdb0b",
+      "manifest": "packages/com.coloros.backuprestore/manifest.json"
+    },
+    "com.skyhand.redbookhelper": {
+      "version": "2a43d40c1922",
+      "manifest": "packages/com.skyhand.redbookhelper/manifest.json"
+    },
+    "com.coloros.compass2": {
+      "version": "18b05db4933a",
+      "manifest": "packages/com.coloros.compass2/manifest.json"
+    },
+    "com.sankuai.meituan": {
+      "version": "307f69c11ec3",
+      "manifest": "packages/com.sankuai.meituan/manifest.json"
+    },
+    "com.tsng.hidemyapplist": {
+      "version": "b1cc3efdf73d",
+      "manifest": "packages/com.tsng.hidemyapplist/manifest.json"
+    },
+    "com.discord": {
+      "version": "1f682e790740",
+      "manifest": "packages/com.discord/manifest.json"
+    },
+    "com.coloros.note": {
+      "version": "c1bde3cf8723",
+      "manifest": "packages/com.coloros.note/manifest.json"
+    },
+    "com.fankes.notifyicondebugging": {
+      "version": "42efa6f3b96a",
+      "manifest": "packages/com.fankes.notifyicondebugging/manifest.json"
+    },
+    "net.csdn.csdnplus": {
+      "version": "5edc42cc84b2",
+      "manifest": "packages/net.csdn.csdnplus/manifest.json"
+    },
+    "com.oplus.consumerIRApp": {
+      "version": "92fee3c3f441",
+      "manifest": "packages/com.oplus.consumerIRApp/manifest.json"
+    },
+    "com.coolapk.market": {
+      "version": "e52e97bdd44c",
+      "manifest": "packages/com.coolapk.market/manifest.json"
+    },
+    "com.baidu.BaiduMap": {
+      "version": "4436e9d147bc",
+      "manifest": "packages/com.baidu.BaiduMap/manifest.json"
+    },
+    "io.wallpaperengine.weclient": {
+      "version": "940b7cdbc93d",
+      "manifest": "packages/io.wallpaperengine.weclient/manifest.json"
+    },
+    "com.gotokeep.keep": {
+      "version": "7ebd1a8f433d",
+      "manifest": "packages/com.gotokeep.keep/manifest.json"
     },
     "chat.simplex.app": {
       "version": "17550045b102",
       "manifest": "packages/chat.simplex.app/manifest.json"
     },
+    "fun.upup.musicfree": {
+      "version": "c11a76faea14",
+      "manifest": "packages/fun.upup.musicfree/manifest.json"
+    },
+    "com.fankes.coloros.notify": {
+      "version": "09ab115349d4",
+      "manifest": "packages/com.fankes.coloros.notify/manifest.json"
+    },
+    "com.android.email": {
+      "version": "fb51febd95d3",
+      "manifest": "packages/com.android.email/manifest.json"
+    },
+    "com.tencent.qqmusic": {
+      "version": "0cedac27ba49",
+      "manifest": "packages/com.tencent.qqmusic/manifest.json"
+    },
+    "com.coloros.familyguard": {
+      "version": "e82db6db086b",
+      "manifest": "packages/com.coloros.familyguard/manifest.json"
+    },
+    "org.telegram.messenger.web": {
+      "version": "81d89b7adf8f",
+      "manifest": "packages/org.telegram.messenger.web/manifest.json"
+    },
+    "com.sogou.translator": {
+      "version": "59b03638dfc7",
+      "manifest": "packages/com.sogou.translator/manifest.json"
+    },
+    "com.xd.rotaeno.tapio": {
+      "version": "67f74e9114ff",
+      "manifest": "packages/com.xd.rotaeno.tapio/manifest.json"
+    },
+    "com.bigshu.lightshu": {
+      "version": "fd765b908f1c",
+      "manifest": "packages/com.bigshu.lightshu/manifest.json"
+    },
+    "com.coloros.calendar": {
+      "version": "d36c01abf59d",
+      "manifest": "packages/com.coloros.calendar/manifest.json"
+    },
+    "com.kugou.android": {
+      "version": "fd542e374571",
+      "manifest": "packages/com.kugou.android/manifest.json"
+    },
+    "com.finshell.wallet": {
+      "version": "65fd57441d17",
+      "manifest": "packages/com.finshell.wallet/manifest.json"
+    },
+    "com.gorgeous.lite": {
+      "version": "771145d0e621",
+      "manifest": "packages/com.gorgeous.lite/manifest.json"
+    },
+    "com.tencent.wemeet.app": {
+      "version": "3a6d00e62a2d",
+      "manifest": "packages/com.tencent.wemeet.app/manifest.json"
+    },
+    "com.mindera.xindao": {
+      "version": "83f7a0a08710",
+      "manifest": "packages/com.mindera.xindao/manifest.json"
+    },
+    "com.getsurfboard": {
+      "version": "496fecd207a9",
+      "manifest": "packages/com.getsurfboard/manifest.json"
+    },
+    "io.dcloud.H576E6CC7": {
+      "version": "742a61e4201e",
+      "manifest": "packages/io.dcloud.H576E6CC7/manifest.json"
+    },
+    "com.microsoft.emmx": {
+      "version": "705894c9d6cb",
+      "manifest": "packages/com.microsoft.emmx/manifest.json"
+    },
+    "com.absinthe.libchecker": {
+      "version": "6cc941d00c09",
+      "manifest": "packages/com.absinthe.libchecker/manifest.json"
+    },
     "cn.com.langeasy.LangEasyLexis": {
-      "version": "253516777438",
+      "version": "11feb52356eb",
       "manifest": "packages/cn.com.langeasy.LangEasyLexis/manifest.json"
+    },
+    "com.hpbr.bosszhipin": {
+      "version": "355652bea132",
+      "manifest": "packages/com.hpbr.bosszhipin/manifest.json"
+    },
+    "com.eg.android.AlipayGphone": {
+      "version": "36b8c87c0bff",
+      "manifest": "packages/com.eg.android.AlipayGphone/manifest.json"
+    },
+    "com.microsoft.office.officehubrow": {
+      "version": "7b55a24148e9",
+      "manifest": "packages/com.microsoft.office.officehubrow/manifest.json"
+    },
+    "me.weishu.kernelsu": {
+      "version": "f4496c61a882",
+      "manifest": "packages/me.weishu.kernelsu/manifest.json"
+    },
+    "com.bilibili.fatego": {
+      "version": "3d52544bfc0c",
+      "manifest": "packages/com.bilibili.fatego/manifest.json"
+    },
+    "cn.xiaochuankeji.tieba": {
+      "version": "32295a26ba6f",
+      "manifest": "packages/cn.xiaochuankeji.tieba/manifest.json"
+    },
+    "com.xjcheng.musictageditor": {
+      "version": "cb4a709e009f",
+      "manifest": "packages/com.xjcheng.musictageditor/manifest.json"
+    },
+    "com.xingin.xhs": {
+      "version": "414409ccf44a",
+      "manifest": "packages/com.xingin.xhs/manifest.json"
+    },
+    "com.coloros.alarmclock": {
+      "version": "ec5c1380427a",
+      "manifest": "packages/com.coloros.alarmclock/manifest.json"
+    },
+    "com.smk": {
+      "version": "19d9c24fa888",
+      "manifest": "packages/com.smk/manifest.json"
+    },
+    "com.tencent.mobileqq": {
+      "version": "b9a115c242de",
+      "manifest": "packages/com.tencent.mobileqq/manifest.json"
+    },
+    "com.coloros.filemanager": {
+      "version": "d2839dc84ea7",
+      "manifest": "packages/com.coloros.filemanager/manifest.json"
+    },
+    "com.shenlan.m.reverse1999": {
+      "version": "0f7450a37698",
+      "manifest": "packages/com.shenlan.m.reverse1999/manifest.json"
+    },
+    "com.yek.android.kfc.activitys": {
+      "version": "d6a7b58ab9a6",
+      "manifest": "packages/com.yek.android.kfc.activitys/manifest.json"
+    },
+    "is.follow": {
+      "version": "a4c08355d539",
+      "manifest": "packages/is.follow/manifest.json"
     },
     "bin.mt.plus": {
       "version": "c583a18ef026",
       "manifest": "packages/bin.mt.plus/manifest.json"
+    },
+    "com.coloros.weather2": {
+      "version": "acfde76c9132",
+      "manifest": "packages/com.coloros.weather2/manifest.json"
+    },
+    "com.nowcoder.app.florida": {
+      "version": "449c97fa2991",
+      "manifest": "packages/com.nowcoder.app.florida/manifest.json"
+    },
+    "com.taobao.idlefish": {
+      "version": "2fefe9749374",
+      "manifest": "packages/com.taobao.idlefish/manifest.json"
+    },
+    "com.example.hikerview": {
+      "version": "ac0c887f75bb",
+      "manifest": "packages/com.example.hikerview/manifest.json"
+    },
+    "com.mubu.app": {
+      "version": "7f6f181999b2",
+      "manifest": "packages/com.mubu.app/manifest.json"
+    },
+    "com.larus.nova": {
+      "version": "47f3e2c5f470",
+      "manifest": "packages/com.larus.nova/manifest.json"
+    },
+    "com.ytheekshana.deviceinfo": {
+      "version": "97335ec7016c",
+      "manifest": "packages/com.ytheekshana.deviceinfo/manifest.json"
+    },
+    "com.baidu.tieba": {
+      "version": "9abe6f6da73d",
+      "manifest": "packages/com.baidu.tieba/manifest.json"
+    },
+    "com.sohu.inputmethod.sogouoem": {
+      "version": "ac959531483f",
+      "manifest": "packages/com.sohu.inputmethod.sogouoem/manifest.json"
+    },
+    "io.legato.kazusa": {
+      "version": "fc627b53e48c",
+      "manifest": "packages/io.legato.kazusa/manifest.json"
+    },
+    "com.rcmiku.payload.dumper.compose": {
+      "version": "3d3ea17bb39c",
+      "manifest": "packages/com.rcmiku.payload.dumper.compose/manifest.json"
+    },
+    "com.tingfeng.tool": {
+      "version": "15a1ee284bc3",
+      "manifest": "packages/com.tingfeng.tool/manifest.json"
+    },
+    "io.github.vvb2060.keyattestation": {
+      "version": "2053c8fcf3eb",
+      "manifest": "packages/io.github.vvb2060.keyattestation/manifest.json"
+    },
+    "com.mihoyo.hyperion": {
+      "version": "8a6de93017fb",
+      "manifest": "packages/com.mihoyo.hyperion/manifest.json"
+    },
+    "tech.lolli.toolbox": {
+      "version": "141351375cb7",
+      "manifest": "packages/tech.lolli.toolbox/manifest.json"
+    },
+    "com.qidian.QDReader": {
+      "version": "c68d72ffb5ce",
+      "manifest": "packages/com.qidian.QDReader/manifest.json"
+    },
+    "com.masseffect.suki": {
+      "version": "856f8896ebf1",
+      "manifest": "packages/com.masseffect.suki/manifest.json"
+    },
+    "com.google.android.apps.docs": {
+      "version": "d3d9ede165c4",
+      "manifest": "packages/com.google.android.apps.docs/manifest.json"
+    },
+    "io.github.vvb2060.mahoshojo": {
+      "version": "cfad259cd19e",
+      "manifest": "packages/io.github.vvb2060.mahoshojo/manifest.json"
     }
   }
 }

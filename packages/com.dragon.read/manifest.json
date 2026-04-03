@@ -1,0 +1,162 @@
+{
+  "version": "ae6c536ee7ea",
+  "files": [
+    {
+      "file": "mat.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "93755b76003c76a8aae458037863f1a389c1f0105adaffe2fc7df5b90586ef0c",
+      "size": 12957,
+      "variant": "mat"
+    },
+    {
+      "file": "monochrome.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "549a27caec94ffed372154cb7be1ca934580f973ee1adf98254591f1f2fa7098",
+      "size": 2297,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "4289875a3b25aed05ad03d25288689d27a756ecc321b08bc704cac6fe600dd38",
+      "size": 2048,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "52877703917417617bfb2b984ba9d51107c73f78daee1cdf021812d94d0b7d5a",
+      "size": 2379,
+      "variant": "monochrome"
+    },
+    {
+      "file": "monochrome_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "6226481a218c67920c42b1aa36e90a288167a74edc527f04220f48f3b5ea912d",
+      "size": 4767,
+      "variant": "monochrome"
+    },
+    {
+      "file": "nsd.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "fa9f9892a0dc85cac13d15cb062c995e49c042076c51633737341015101c99cb",
+      "size": 5694
+    },
+    {
+      "file": "outline.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "863f37b43c58964ce2384ffd75e0bb076c698bffc7643836d664aeba34c78038",
+      "size": 1072
+    },
+    {
+      "file": "peb.png",
+      "type": "asset",
+      "required": true,
+      "sha256": "d795d2cf84749195df8f71e6c425c9565a827cf79d358d8339cc9fc9dadd4f19",
+      "size": 17333
+    },
+    {
+      "file": "rec_night.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "5384abd6d9285e749c6ee5fb7cb1fd9607dc49ada9a08bb225145c7755ca3ceb",
+      "size": 2887,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "c6d50e666df5291d13daaeb119fc7ec8bf2291c9ad2534158951795b6267a45b",
+      "size": 5650,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "3aa5049d63822399ca7be532aa44f0580420d8d542478602bd8973aa40ecd5db",
+      "size": 5548,
+      "variant": "dark"
+    },
+    {
+      "file": "rec_night_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "46f40676a19197481442be5434fd33ad0d97e50dfc01eeb506e87cbb1167aad6",
+      "size": 11059,
+      "variant": "dark"
+    },
+    {
+      "file": "recbg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+      "size": 101,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+      "size": 119,
+      "variant": "light"
+    },
+    {
+      "file": "recbg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+      "size": 163,
+      "variant": "light"
+    },
+    {
+      "file": "recfg.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "a6e2853feef1f7bd9c0746eb9b982e1158b3275162268521ca15973c706de26e",
+      "size": 2919,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_1x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "5c539e6af2e67164e455b3de44af4254535cc3e0166a4267fb21f69188df324a",
+      "size": 5661,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x1.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "250b2965eaee08b2a3ebd21e9cbaaa226447832ea34c4b81491a42d3666a1eb8",
+      "size": 5515,
+      "variant": "light"
+    },
+    {
+      "file": "recfg_2x2.png",
+      "type": "icon",
+      "required": false,
+      "sha256": "23f6588daa45ec08108f01e793f6a1e3015d714c0932df8065fcd9375976e3a8",
+      "size": 11009,
+      "variant": "light"
+    }
+  ]
+}
