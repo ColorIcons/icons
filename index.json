@@ -1,8 +1,8 @@
 {
   "repo_version": 1,
-  "generated_at": 1775191764,
+  "generated_at": 1775195053,
   "global": {
-    "version": "1f1ce986b2b5",
+    "version": "5cc424c3446a",
     "files": {
       "icons-monorectangle": {
         "sha256": "34a4182890da457264df83de9dd4ee421d657b64024903821c4e79b39b50038b",
@@ -34,6 +34,611 @@
       }
     },
     "packages": {
+      "com.android.mms": {
+        "version": "1b9176ad5453",
+        "files": {
+          "ClearAppData.png": {
+            "sha256": "e89bfb2d89cc626983807d6788bc2ae1ac1f949fc7912dd5aa3670daa496f64a",
+            "size": 1124
+          },
+          "compose.png": {
+            "sha256": "264309831df966f5f432dd8bceb52d78143d1abb0c9fe9db8a02cd7229759b56",
+            "size": 790
+          },
+          "day.png": {
+            "sha256": "f2cda0cb137461b92676cc0f0147192a32bc05752ff997b78c7a9f5c343af369",
+            "size": 35271
+          },
+          "mat.png": {
+            "sha256": "4c43742f12c85556d66a0bc3deef67f44bc949de3b6564d3aaf18cc846310b56",
+            "size": 33776
+          },
+          "monochrome.png": {
+            "sha256": "ddb57193e546dc3b2c2da8e9a7f0e2caece4d1182bd676e548ea2ca826071cec",
+            "size": 1241
+          },
+          "monochrome_1x2.png": {
+            "sha256": "a46972e72544dbbc24e021428a65b770fcb5ae777c2084dc6b49c3cf5f37ffdb",
+            "size": 2826
+          },
+          "monochrome_2x1.png": {
+            "sha256": "29be413052ea9d8e3d19b5c63964b5c14cb92f37151459564b052d842f0d180e",
+            "size": 3216
+          },
+          "monochrome_2x2.png": {
+            "sha256": "0b80ecab094471896a01ded471c0acba5f9c7f941178e5f45cef45f4c6995452",
+            "size": 6450
+          },
+          "nsd.png": {
+            "sha256": "5e0e39dc9ba8cbfc7c60e08b0a11536e5fcee5ac87810bcaf69bc6ca3b229a84",
+            "size": 3161
+          },
+          "peb.png": {
+            "sha256": "b30a7fc8ab05e35081aad57a4e2ad69abb63cf1c1a6023f9f71e1dc5527b3f39",
+            "size": 11378
+          },
+          "rec_night.png": {
+            "sha256": "88e183824cd798ac98bf0056370b4be21be06f593b1a2af5fbba8db3e89aaeb3",
+            "size": 1491
+          },
+          "rec_night_1x2.png": {
+            "sha256": "7e9c8ffbf9dca2375e6cf7c2f60c9f167fd7f69326bb906f7540657c0a08b1f1",
+            "size": 8665
+          },
+          "rec_night_2x1.png": {
+            "sha256": "d032a47955c8616cb817406f891ab9fc85a133665009e8fb5c3e80604fba7f4c",
+            "size": 8092
+          },
+          "rec_night_2x2.png": {
+            "sha256": "20e5770340e733ee806657973646e8b714080dedae9736fb7380970fa73140c9",
+            "size": 17406
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "b4906f1f35f33d0b32f476d43eab45742742ba4bbb8085c32abe5c4e2fc6b5be",
+            "size": 1458
+          },
+          "recfg_1x2.png": {
+            "sha256": "28cfb636960f5876d1397a9dfb57da7f2e10a698adde22de5b733d771e0a9276",
+            "size": 8640
+          },
+          "recfg_2x1.png": {
+            "sha256": "dd1ea08dd515e54d086ee1f10975ff617750c3cdaeaef3323ebed3df8ed9668b",
+            "size": 7980
+          },
+          "recfg_2x2.png": {
+            "sha256": "a4f5c275e3bd5c226691c252f8c261cf6b6a5ba3c34085a995012725c3b41b03",
+            "size": 17184
+          }
+        }
+      },
+      "com.android.contacts": {
+        "version": "0f3e666d667d",
+        "files": {
+          "day.png": {
+            "sha256": "d5284a73c7b9fdf51670a920306599abc68a6c28bfa3eccc9a8d3d6ef276e168",
+            "size": 39056
+          },
+          "dialer_day.png": {
+            "sha256": "0001d36f830ea3d79960b59fbcb92b3fb4660fe9a74baac215dbdb958b6e8265",
+            "size": 40667
+          },
+          "dialer_mat.png": {
+            "sha256": "54dfbabc4671ff1ec9b3be654afed8663741c5b825cd2686a0fc9d831e10050b",
+            "size": 29054
+          },
+          "dialer_monochrome.png": {
+            "sha256": "a2d3850334e3f227431a1023ca446d40be871bcdfbf89c8d6b1bb0281178550a",
+            "size": 1315
+          },
+          "dialer_monochrome_1x2.png": {
+            "sha256": "a9266313b6fd3edd145975963d697acb8d90c194cfa1da38839db4b45038a4ae",
+            "size": 1163
+          },
+          "dialer_monochrome_2x1.png": {
+            "sha256": "a288b74e376aef30b22e34db750aa1090510f5acb97c373f41fc3b5eacb7d293",
+            "size": 1173
+          },
+          "dialer_monochrome_2x2.png": {
+            "sha256": "8b80e1f3193a12cd733b21bdfaf632057713e25c94cfd4bd72b121ae18677b1c",
+            "size": 2417
+          },
+          "dialer_nsd.png": {
+            "sha256": "4a73686e831debb9060ac9e2d691813d57db36010c00477e6065efe14f35849c",
+            "size": 2645
+          },
+          "dialer_peb.png": {
+            "sha256": "9d6cbaac3890f99b7982b7d8479b5e032dc568c213ead881ad939d2eed95e995",
+            "size": 13237
+          },
+          "dialer_rec_night.png": {
+            "sha256": "57332ed4df9ab415f6b79ebf36fdd8eaa48611b65990ee2a31cebf8c15bb7272",
+            "size": 1794
+          },
+          "dialer_rec_night_1x2.png": {
+            "sha256": "ff359af5be5d9480fc3ecdaeac9053297b5d7f9488ebcaae1a4606188aac04da",
+            "size": 4694
+          },
+          "dialer_rec_night_2x1.png": {
+            "sha256": "5647b01d46968b5674743240e22e87ed238314a99e8287155db032a9d6f9e47d",
+            "size": 3577
+          },
+          "dialer_rec_night_2x2.png": {
+            "sha256": "c0b9475ed4b684a533d02c4dde1ca887267c0599fe5e51a06de633fd46387de3",
+            "size": 7876
+          },
+          "dialer_recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "dialer_recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "dialer_recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "dialer_recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "dialer_recfg.png": {
+            "sha256": "a2d3850334e3f227431a1023ca446d40be871bcdfbf89c8d6b1bb0281178550a",
+            "size": 1315
+          },
+          "dialer_recfg_1x2.png": {
+            "sha256": "a9266313b6fd3edd145975963d697acb8d90c194cfa1da38839db4b45038a4ae",
+            "size": 1163
+          },
+          "dialer_recfg_2x1.png": {
+            "sha256": "a288b74e376aef30b22e34db750aa1090510f5acb97c373f41fc3b5eacb7d293",
+            "size": 1173
+          },
+          "dialer_recfg_2x2.png": {
+            "sha256": "8b80e1f3193a12cd733b21bdfaf632057713e25c94cfd4bd72b121ae18677b1c",
+            "size": 2417
+          },
+          "mat.png": {
+            "sha256": "4de12bb9fdff171dab984bcb388e3c1aa34600289611fa33a8bc4848741fe5a3",
+            "size": 48927
+          },
+          "monochrome.png": {
+            "sha256": "90bd6bcdadcb9478a24ebdd72dfaea96ee127f38f5748c7bb630cfbe635f1392",
+            "size": 2924
+          },
+          "monochrome_1x2.png": {
+            "sha256": "7e9650e9086a8fd37261ded65468b1f202b442ec4e1a542c03fbd8d54f8e5491",
+            "size": 2220
+          },
+          "monochrome_2x1.png": {
+            "sha256": "a325c05bc058dea7560b9fff7f91b25d4e8e0d36b23b2a45316c6bf97cbdcd85",
+            "size": 2522
+          },
+          "monochrome_2x2.png": {
+            "sha256": "fd73476ecc59374027fe0f523ca21f393329a7970718940753ae9bee11b63ca3",
+            "size": 5167
+          },
+          "nsd.png": {
+            "sha256": "4c78a7b3bb69b717fd77ca53948fe55af159f5304b10c1a7e48cfdd0f4addb60",
+            "size": 2424
+          },
+          "peb.png": {
+            "sha256": "67065c26e76eb5b6a7eb33cb00028c53444eed6063db39e15b26ad63e4db20b8",
+            "size": 11687
+          },
+          "rec_night.png": {
+            "sha256": "f6619bfa687ab413dcb1f9ba698bd9944df16a95aa0d23997a85b8e73fb1896c",
+            "size": 3331
+          },
+          "rec_night_1x2.png": {
+            "sha256": "6bcaf3e411a195602e280eff03d5250d84de5accc8c692af76ccfde0e1b583d2",
+            "size": 4698
+          },
+          "rec_night_2x1.png": {
+            "sha256": "c0cb4a82bab726df0622d2464dc0f4e46b2c77cd90213a7f18a189aeeccb1302",
+            "size": 3666
+          },
+          "rec_night_2x2.png": {
+            "sha256": "d5fc13bd139ea79ceb1ebaa80b89c12613fd703fbe51a1ec974af2e514e919ff",
+            "size": 7961
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "4cd1b9c2b657cf3248f02312801001aaed68d7d8bf77e53cc94f8152354d9e1b",
+            "size": 3330
+          },
+          "recfg_1x2.png": {
+            "sha256": "f5df94c0fba39f09d0ea77ec90e4db0024b402937b3fabdc5ee1272e80ebdd98",
+            "size": 4710
+          },
+          "recfg_2x1.png": {
+            "sha256": "5998a89de167ae658c64ab50e1503c322c83852c96a90de8b0c386395ab06e3a",
+            "size": 3658
+          },
+          "recfg_2x2.png": {
+            "sha256": "64d97fa47abb179dc3b65ab50ecfc35a8a716de2e9107bc75c292e3a318af9f0",
+            "size": 7998
+          },
+          "shortcut-add-contact.png": {
+            "sha256": "8f12fa386c52908de40e4860431e6abbb270e13357f8eed346a7ee783c462fe0",
+            "size": 1392
+          }
+        }
+      },
+      "com.heytap.market": {
+        "version": "4995bd942b3d",
+        "files": {
+          "clean.png": {
+            "sha256": "569ae132b80340f5102e19d38c8c835dbd1f16654f57c5975970fd793cc7c4ea",
+            "size": 710
+          },
+          "day.png": {
+            "sha256": "9586cfe571fc4282d6ec8e0ed69462274f95a5d43fcdd4c8310a7aab7fce3ebb",
+            "size": 33439
+          },
+          "mat.png": {
+            "sha256": "1d987b93514b5bc6490113c272617a5c99eb9b9406249b7dbe16c86d98cc5cf1",
+            "size": 35442
+          },
+          "monochrome.png": {
+            "sha256": "e156554e4ca6d8276fffc9f501c5636d3361d650336579b7dcfb423f297794b8",
+            "size": 875
+          },
+          "monochrome_1x2.png": {
+            "sha256": "069ecdf1f280cf7513a13ffddfd994699265294ca24b5847bd65b285e1695eb6",
+            "size": 1880
+          },
+          "monochrome_2x1.png": {
+            "sha256": "0537a19c3279a8849b991d1fd125236add353ec36ee338261630669040bc8983",
+            "size": 1866
+          },
+          "monochrome_2x2.png": {
+            "sha256": "015982e83f3369805486c48e18bf3d09da09c417928b6241c09434ed533b2447",
+            "size": 3930
+          },
+          "nsd.png": {
+            "sha256": "6ad045fbf7b67a1a7b89e690cda42b3592f66100b09c2caa68e3c907d6af1cf2",
+            "size": 1962
+          },
+          "peb.png": {
+            "sha256": "c351b89bd89e935601e161d286cd4457c71bf3007a74e62561b8a2db03c8e6ef",
+            "size": 10775
+          },
+          "rec_night.png": {
+            "sha256": "1356e0079e4b09fb3b54ac42f7eb560fb21215271b28d5e89b81ec8033ecf6e9",
+            "size": 2114
+          },
+          "rec_night_1x2.png": {
+            "sha256": "e3aae4e9309fd78078ef18a4e74d7fc2f240e6e35f2d65237893ad520db302dd",
+            "size": 6105
+          },
+          "rec_night_2x1.png": {
+            "sha256": "618e25d12c0be0d1301dcf888564d4371944d72c0850822382f7e98c00e1198b",
+            "size": 4941
+          },
+          "rec_night_2x2.png": {
+            "sha256": "86fc9da28ebffd065ee213713e65a89b7ce10c0cd5ceea206f8f82b0cd73c9b2",
+            "size": 10936
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "940c07f2421df43bf549a1881de0f76699cf8f3adb1caa671655cdbb0c20de3f",
+            "size": 2101
+          },
+          "recfg_1x2.png": {
+            "sha256": "8c24e370a3fbfc4105cab01a70cafbaffbd9f4e18fe989cbb8d12227ac92c30d",
+            "size": 6098
+          },
+          "recfg_2x1.png": {
+            "sha256": "f8fadb8e5e156ae0f072bf6873e45fe1706db9eca7b6fa34bcddc38ef2114d96",
+            "size": 4906
+          },
+          "recfg_2x2.png": {
+            "sha256": "03ddae17c809769f7089ce47a348e671fdf6cd0f84199cc5ca85f09e6b6736ec",
+            "size": 10912
+          },
+          "search.png": {
+            "sha256": "1f6c088b7d3695f690f41efdc378a5c16b7525000bf5cdf24514550df10d68b6",
+            "size": 1129
+          },
+          "uninstall.png": {
+            "sha256": "b2a325b3769359789d2b50114fb302748e3e35d8ae75258eb3b971e8fe02ae80",
+            "size": 1090
+          },
+          "upgrade.png": {
+            "sha256": "cb707bdb57dcd2de8e4e84fc21e21a497ee81f146dbdc5c8a06cd35c8efba8e7",
+            "size": 1212
+          }
+        }
+      },
+      "com.android.incallui": {
+        "version": "655b5d821ca2",
+        "files": {
+          "dialer_monochrome.png": {
+            "sha256": "843eafd0bc37e56fafb2bb7c4e1d962aca4df3328b6b6bf5068ead8d45fdd814",
+            "size": 773
+          },
+          "dialer_monochrome_1x2.png": {
+            "sha256": "a9266313b6fd3edd145975963d697acb8d90c194cfa1da38839db4b45038a4ae",
+            "size": 1163
+          },
+          "dialer_monochrome_2x1.png": {
+            "sha256": "a288b74e376aef30b22e34db750aa1090510f5acb97c373f41fc3b5eacb7d293",
+            "size": 1173
+          },
+          "dialer_monochrome_2x2.png": {
+            "sha256": "8b80e1f3193a12cd733b21bdfaf632057713e25c94cfd4bd72b121ae18677b1c",
+            "size": 2417
+          },
+          "dialer_rec_night.png": {
+            "sha256": "4050cdbc31644e27683910261020e71090114fb0cca3d6c5a2deebcd4fed3257",
+            "size": 10230
+          },
+          "dialer_rec_night_1x2.png": {
+            "sha256": "ff105f99038dc90d20303941d4e286a130f3cc1ab0bdc9969e79a2564f39a836",
+            "size": 10198
+          },
+          "dialer_rec_night_2x1.png": {
+            "sha256": "edee6c4057df0b9e5bb1f677b28651dcadb3bc34dcd42a4fffb70d31ca531166",
+            "size": 9791
+          },
+          "dialer_rec_night_2x2.png": {
+            "sha256": "4eccfb0dacb0bb8c5fec319488049545c674fac85dac1b76b9be925139ccf953",
+            "size": 23554
+          },
+          "dialer_recbg.png": {
+            "sha256": "bb0522e6eb2cb01ab843fdd234175b1d4a31b103153933f2a734bbaac8bf0565",
+            "size": 6198
+          },
+          "dialer_recbg_1x2.png": {
+            "sha256": "97a551de90432b5ea94d9c71e11c116a3d4b788b15818b5a05442e41f53a1c53",
+            "size": 21736
+          },
+          "dialer_recbg_2x1.png": {
+            "sha256": "b57fb687c6c11acfcaabbf0e91754438a5c95cbcab573110388c34889b843570",
+            "size": 19039
+          },
+          "dialer_recbg_2x2.png": {
+            "sha256": "d88fad3aad8c6c19fbfe8a09ea5b2b61a538fab832ed42d33936dcaa375b987c",
+            "size": 53157
+          },
+          "dialer_recfg.png": {
+            "sha256": "ada02d2191d0b86898e3e23ed6cc13f611129888c5ff67279251dec9797bf85e",
+            "size": 11291
+          },
+          "dialer_recfg_1x2.png": {
+            "sha256": "991437d4e76cbd1cc883db79bca220ea36a7543e9caf235a7ce8214cda28c54c",
+            "size": 9705
+          },
+          "dialer_recfg_2x1.png": {
+            "sha256": "5caeda61f2ba0071ce4afa5fdfa0a8854fc2d3fffbe38b073796c5bee7056f19",
+            "size": 11536
+          },
+          "dialer_recfg_2x2.png": {
+            "sha256": "f28a1b32f977d48aa28f208f067ad3efe8dce1d7eef9eb92968ae529945d86f9",
+            "size": 29298
+          },
+          "monochrome.png": {
+            "sha256": "843eafd0bc37e56fafb2bb7c4e1d962aca4df3328b6b6bf5068ead8d45fdd814",
+            "size": 773
+          },
+          "monochrome_1x2.png": {
+            "sha256": "a9266313b6fd3edd145975963d697acb8d90c194cfa1da38839db4b45038a4ae",
+            "size": 1163
+          },
+          "monochrome_2x1.png": {
+            "sha256": "a288b74e376aef30b22e34db750aa1090510f5acb97c373f41fc3b5eacb7d293",
+            "size": 1173
+          },
+          "monochrome_2x2.png": {
+            "sha256": "8b80e1f3193a12cd733b21bdfaf632057713e25c94cfd4bd72b121ae18677b1c",
+            "size": 2417
+          },
+          "rec_night.png": {
+            "sha256": "c66e88b8f374392d28abc67de14fe6d980af3135e235149a9d0f9265e7dac387",
+            "size": 2003
+          },
+          "rec_night_1x2.png": {
+            "sha256": "ff359af5be5d9480fc3ecdaeac9053297b5d7f9488ebcaae1a4606188aac04da",
+            "size": 4694
+          },
+          "rec_night_2x1.png": {
+            "sha256": "5647b01d46968b5674743240e22e87ed238314a99e8287155db032a9d6f9e47d",
+            "size": 3577
+          },
+          "rec_night_2x2.png": {
+            "sha256": "c0b9475ed4b684a533d02c4dde1ca887267c0599fe5e51a06de633fd46387de3",
+            "size": 7876
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "eda109b5c75660b5947b1571193c6b79f7b0c8e7643acb4e12dd53b777c1e5b9",
+            "size": 1982
+          },
+          "recfg_1x2.png": {
+            "sha256": "35fae6ed17201b7bfd7a6e8538ace42faa51151df0300b697367f6b4aa2fb157",
+            "size": 4652
+          },
+          "recfg_2x1.png": {
+            "sha256": "6f428a93ee954278c6abd3cf2c34a75024f5c99dc378d3f3cd7b51e1b7c342d5",
+            "size": 3551
+          },
+          "recfg_2x2.png": {
+            "sha256": "410ceeb3fbdd094ef3bb0c98a83f3cc81e5489c36b836794307b59c7b5051223",
+            "size": 7858
+          }
+        }
+      },
+      "com.android.settings": {
+        "version": "c69012119148",
+        "files": {
+          "day.png": {
+            "sha256": "96a35818f7fe974894d2a449d515b5f1b6e04439a740546a4c16eb644dab8cb2",
+            "size": 41161
+          },
+          "ic_shortcut_battery.png": {
+            "sha256": "0d2bc8ff10aa59436d663e241d0e89926f7384af7425c3ec78a22273ad244e53",
+            "size": 731
+          },
+          "ic_shortcut_bluetooth.png": {
+            "sha256": "c8642378486506b92c25f113be81fbc512a400a2f4f4a3a78dd6ac9d7f82dcf2",
+            "size": 919
+          },
+          "ic_shortcut_network.png": {
+            "sha256": "537b74c48b4721bb0a6b7412889a3c3d6a87811cc59a22b0a5c94202144c188e",
+            "size": 626
+          },
+          "ic_shortcut_search.png": {
+            "sha256": "4f480b44bc99fca494a41a0075dc6e18e5442be8b0d4ff06e3146e9862a884e5",
+            "size": 1410
+          },
+          "ic_shortcut_wifi.png": {
+            "sha256": "4ed2e3f110788c78bceeabce8db49a6a9d350c355fa63214b49fa71b0de7e987",
+            "size": 1205
+          },
+          "manifest-shortcut-search.png": {
+            "sha256": "f6714f43960f11361352f9d1a51f69d739d314e9905530a116d64fee41990200",
+            "size": 1345
+          },
+          "mat.png": {
+            "sha256": "3ca5437e6f00220ce13fec8b5bfa9b32a1f84029c0beb38bc1927fef56a17da4",
+            "size": 31306
+          },
+          "monochrome.png": {
+            "sha256": "080420aadac4c83378ac1cf0a041f267fc8a5a32779cbd13021a6f92c9b523a7",
+            "size": 2058
+          },
+          "monochrome_1x2.png": {
+            "sha256": "06fe2d4d7041fa4a3eb0cb3265bb88eba7ad5132e494ef9dfeba8bc04a99b6eb",
+            "size": 3004
+          },
+          "monochrome_2x1.png": {
+            "sha256": "aa2ea24b47548e6f772c592c373e9f58a2c2ad6ab3e499b1cdeedcfe012ef969",
+            "size": 3194
+          },
+          "monochrome_2x2.png": {
+            "sha256": "e6c653055a88b9f4f9d203b6ac9b21c7ffa55f9a8c4080ba62d6b2945c5e31be",
+            "size": 7148
+          },
+          "nsd.png": {
+            "sha256": "a8da38b172ec397e47849de91b1632b0628933999d3daca382adda3bc3c586ca",
+            "size": 3200
+          },
+          "peb.png": {
+            "sha256": "82f9907682b0e5a0c97e1cf219d041ccb52571c7a460aec26d16117805de1fac",
+            "size": 10892
+          },
+          "rec_night.png": {
+            "sha256": "fd40321dd26ad7822aa72f4faa851680bbe3989a9000c1b0da9d7e311890cc36",
+            "size": 4920
+          },
+          "rec_night_1x2.png": {
+            "sha256": "5ac798bf370df9b41073850d8ae7e481e0ead3e787fff4c2165d8b6d3aa3ffd6",
+            "size": 9636
+          },
+          "rec_night_2x1.png": {
+            "sha256": "8df6e1b64cc400cd20356304b779a597ff9ca2b16ba7dcdfd87d7b6e99b9b366",
+            "size": 8777
+          },
+          "rec_night_2x2.png": {
+            "sha256": "77d997468ba8096f2be6b70ade4fb026a0a7ba938f6efdd8fa12b6d20a8c1256",
+            "size": 20040
+          },
+          "recbg.png": {
+            "sha256": "a09f3f4f270c51356b4a9ea9cb16099efdbce72c775cad9db1ec8e4bc51ba019",
+            "size": 101
+          },
+          "recbg_1x2.png": {
+            "sha256": "058f121c5dea2e35e2877dffc9117cc994b4a1455a88a97bf7a0b8f42d98187c",
+            "size": 119
+          },
+          "recbg_2x1.png": {
+            "sha256": "be5a5f72d1b6ad474503eed54b94260cba3337d727794099f845ca6f2cde8d74",
+            "size": 119
+          },
+          "recbg_2x2.png": {
+            "sha256": "fc41cff78ef6d2659ef579db6a090855b2e5b5fd711003365ed37c469e73def4",
+            "size": 163
+          },
+          "recfg.png": {
+            "sha256": "844aa5ebc02bdd1fb520785d9fcffbe8dfd8221b94560d3c860733b8106d0777",
+            "size": 4879
+          },
+          "recfg_1x2.png": {
+            "sha256": "d94f7f525aa3b92b47144f178a6d3ce25dbb61610ce45433edb837b47d73debb",
+            "size": 9597
+          },
+          "recfg_2x1.png": {
+            "sha256": "c450cf4813c500fb073fe77181698e34b46380bcf50bafc0e990f5f95b132d72",
+            "size": 8735
+          },
+          "recfg_2x2.png": {
+            "sha256": "43cd8466f2a7f8adf5b4a83d041cf9c788dab41e8c9ba76ca0f7f653bf4036e1",
+            "size": 20024
+          }
+        }
+      },
       "com.coloros.gallery3d": {
         "version": "03590afa5c7d",
         "files": {
