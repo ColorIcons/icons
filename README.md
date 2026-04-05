@@ -1,6 +1,6 @@
 # ColorOS Custom Icon Resource Library
 
-- [中文 (Chinese)](README.md)
+- [中文 (Chinese)](README_zh.md)
 - [English](README.md)
 
 This repository contains custom icon resources for ColorOS.

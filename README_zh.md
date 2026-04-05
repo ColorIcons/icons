@@ -1,6 +1,6 @@
 # ColorOS 自定义图标资源库
 
-- [中文 (Chinese)](README.md)
+- [中文 (Chinese)](README_zh.md)
 - [English](README.md)
 
 本仓库包含 ColorOS 的自定义图标资源
