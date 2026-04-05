@@ -137,8 +137,11 @@ document.getElementById('search-input').addEventListener('input', (e) => {
 """
 
 
+SIZE_SUFFIX_RE = re.compile(r"_(\d)x(\d)")
+
+
 def get_grid_class(filename):
-    match = re.search(r"_(\d)x(\d)", filename)
+    match = SIZE_SUFFIX_RE.search(filename)
     return f"size-{match.group(1)}x{match.group(2)}" if match else ""
 
 
@@ -151,12 +154,21 @@ def main():
         print(f"Error: {INDEX_FILE} not found")
         return
 
-    with open(INDEX_FILE) as f:
+    with open(INDEX_FILE, encoding="utf-8") as f:
         index = json.load(f)
 
     raw_pkgs = index.get("packages", {})
     global_pkgs = index.get("global", {}).get("packages", {})
-    all_packages = {**raw_pkgs, **global_pkgs}
+
+    all_packages = []
+
+    for pkg_name, pkg_info in raw_pkgs.items():
+        pkg_info["_root_dir"] = f"packages/{pkg_name}"
+        all_packages.append((pkg_name, pkg_info))
+
+    for pkg_name, pkg_info in global_pkgs.items():
+        pkg_info["_root_dir"] = f"global/{pkg_name}"
+        all_packages.append((pkg_name, pkg_info))
 
     html_lines = [
         "<!DOCTYPE html><html>",
@@ -165,24 +177,16 @@ def main():
         '<div class="search-container"><input type="text" id="search-input" placeholder="Search packages..."></div>',
     ]
 
-    for pkg_name, pkg_info in sorted(all_packages.items()):
-        files_list = []
+    for pkg_name, pkg_info in sorted(all_packages, key=lambda x: x[0]):
+        pkg_version = pkg_info.get("version", "0.0.1")
+        pkg_dir = pkg_info["_root_dir"]
+        pkg_files = pkg_info.get("files", {})
 
-        if "manifest" in pkg_info:
-            manifest_path = ROOT / pkg_info["manifest"]
-            if not manifest_path.exists():
-                continue
-            with open(manifest_path) as mf:
-                manifest = json.load(mf)
-            pkg_version = manifest.get("version", "0.0.1")
-            pkg_dir = pkg_info["manifest"].rsplit("/", 1)[0]
-            files_list = manifest.get("files", [])
-        else:
-            pkg_version = pkg_info.get("version", "Global")
-            pkg_dir = f"global/{pkg_name}"
-            raw_files = pkg_info.get("files", {})
-            for f_name, f_data in raw_files.items():
-                files_list.append({"file": f_name, "size": f_data.get("size", 0)})
+        files_list = []
+        for f_name, f_data in pkg_files.items():
+            file_entry = {"file": f_name}
+            file_entry.update(f_data)
+            files_list.append(file_entry)
 
         html_lines.append(f"<div class='pkg-section' data-pkg='{pkg_name}'>")
         html_lines.append(
@@ -276,6 +280,7 @@ def main():
 
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
         f.write("\n".join(html_lines))
+
     print(f"Preview generated: {OUTPUT_HTML} (Total: {len(all_packages)} packages)")
 
 
