@@ -48,3 +48,8 @@ When adapting a new application, create a new folder under the `packages` direct
 - Material icons: `mat.svg` (only supports 1x1)
 
 > Naming example: To adapt a 2x2 Monet icon, name it `monochrome_2x2.svg`.
+
+## Disclaimer
+
+All application icons and related visual assets belong to their respective original developers or copyright holders.  
+This repository only provides secondary adaptations and format adjustments for use within the ColorOS ecosystem, and does not claim ownership of any original icon designs.
