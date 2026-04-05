@@ -3,38 +3,117 @@ import sys
 import json
 import time
 import hashlib
+import re
 from pathlib import Path
-from gen_manifest import build_manifest, sha256_file  # 使用原来的 manifest 构建函数
 
 ROOT = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
 PACKAGES_DIR = ROOT / "packages"
 GLOBAL_DIR = ROOT / "global"
 OUTPUT = ROOT / "index.json"
 
+OPTIONAL_FILES = {
+    "mat.png",
+    "monochrome.png",
+    "recbg.png",
+    "recfg.png",
+    "rec_night.png",
+}
+
+VARIANT_MAP = {
+    "mat.png": ("icon", "mat"),
+    "monochrome.png": ("icon", "monochrome"),
+    "recbg.png": ("icon", "light"),
+    "recfg.png": ("icon", "light"),
+    "rec_night.png": ("icon", "dark"),
+}
+
+SIZE_SUFFIX_RE = re.compile(r"^\d+x\d+$")
+
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(8192):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def normalize_name(name: str) -> str:
+    stem = Path(name).stem
+    parts = stem.split("_")
+
+    if len(parts) >= 2 and SIZE_SUFFIX_RE.match(parts[-1]):
+        base = "_".join(parts[:-1])
+    else:
+        base = stem
+
+    return f"{base}.png"
+
+
+def detect_variant(name: str):
+    base_name = normalize_name(name)
+    return VARIANT_MAP.get(base_name, ("asset", None))
+
+
+def is_required(name: str) -> bool:
+    base_name = normalize_name(name)
+    return base_name not in OPTIONAL_FILES
+
+
+def build_package(pkg_dir: Path):
+    files = []
+    h = hashlib.sha256()
+
+    file_list = []
+
+    for file in pkg_dir.iterdir():
+        if not file.is_file():
+            continue
+        if file.suffix != ".png":
+            continue
+
+        file_list.append(file)
+
+    for file in sorted(file_list, key=lambda x: x.name):
+        file_type, variant = detect_variant(file.name)
+
+        sha = sha256_file(file)
+        size = file.stat().st_size
+
+        entry = {
+            "file": file.name,
+            "sha256": sha,
+            "size": size,
+            "type": file_type,
+            "required": is_required(file.name),
+        }
+
+        if variant:
+            entry["variant"] = variant
+
+        files.append(entry)
+
+        h.update(file.name.encode())
+        h.update(sha.encode())
+
+    version = h.hexdigest()[:12]
+
+    return version, files
+
 
 def calc_global_version(items):
-    """
-    计算 global 版本，items 的 value 可以是 dict（有 sha256）或者字符串（文件夹 version）
-    """
     h = hashlib.sha256()
     for name in sorted(items.keys()):
         h.update(name.encode())
         v = items[name]
         if isinstance(v, dict):
-            # 散文件
             h.update(v["sha256"].encode())
         else:
-            # 文件夹 version 字符串
             h.update(v.encode())
     return h.hexdigest()[:12]
 
 
 def build_global():
-    """
-    global 下：
-    - files: 原散文件
-    - packages: 文件夹，生成精简 manifest（只保留 file/sha256/size）
-    """
     files = {}
     packages = {}
 
@@ -47,14 +126,20 @@ def build_global():
                 "sha256": sha256_file(entry),
                 "size": entry.stat().st_size,
             }
+
         elif entry.is_dir():
-            manifest = build_manifest(entry)
-            # 精简处理：只保留 file / sha256 / size
-            simple_files = {}
-            for f in manifest["files"]:
-                simple_files[f["file"]] = {"sha256": f["sha256"], "size": f["size"]}
+            version, file_list = build_package(entry)
+
+            simple_files = {
+                f["file"]: {
+                    "sha256": f["sha256"],
+                    "size": f["size"],
+                }
+                for f in file_list
+            }
+
             packages[entry.name] = {
-                "version": manifest["version"],
+                "version": version,
                 "files": simple_files,
             }
 
@@ -62,6 +147,7 @@ def build_global():
         **{k: v["sha256"] for k, v in files.items()},
         **{k: v["version"] for k, v in packages.items()},
     }
+
     version = calc_global_version(combined)
 
     return {"version": version, "files": files, "packages": packages}
@@ -69,21 +155,35 @@ def build_global():
 
 def build_packages():
     pkgs = {}
+
     if not PACKAGES_DIR.exists():
         return pkgs
 
     for pkg_dir in PACKAGES_DIR.iterdir():
         if not pkg_dir.is_dir():
             continue
-        manifest_file = pkg_dir / "manifest.json"
-        if not manifest_file.exists():
-            continue
-        with open(manifest_file) as f:
-            manifest = json.load(f)
+
+        version, file_list = build_package(pkg_dir)
+
+        files = {}
+        for f in file_list:
+            entry = {
+                "sha256": f["sha256"],
+                "size": f["size"],
+                "type": f["type"],
+                "required": f["required"],
+            }
+            if "variant" in f:
+                entry["variant"] = f["variant"]
+
+            files[f["file"]] = entry
+
         pkgs[pkg_dir.name] = {
-            "version": manifest["version"],
-            "manifest": f"packages/{pkg_dir.name}/manifest.json",
+            "version": version,
+            "count": len(files),
+            "files": files,
         }
+
     return pkgs
 
 

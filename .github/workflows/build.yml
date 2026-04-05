@@ -11,13 +11,13 @@ jobs:
 
     steps:
       # ----------------------------
-      # 1️⃣ Checkout
+      #   Checkout
       # ----------------------------
       - name: Checkout
         uses: actions/checkout@v5
 
       # ----------------------------
-      # 2️⃣ Setup Python（生成 manifest/index）
+      #   Setup Python（生成 manifest/index）
       # ----------------------------
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -25,7 +25,7 @@ jobs:
           python-version: "3.x"
 
       # ----------------------------
-      # 3️⃣ Cache resvg
+      #   Cache resvg
       # ----------------------------
       - name: Cache cargo bin
         uses: actions/cache@v5
@@ -42,7 +42,7 @@ jobs:
           fi
 
       # ----------------------------
-      # 4️⃣ Build assets
+      #   Build assets
       # ----------------------------
       - name: Build assets
         run: |
@@ -109,13 +109,7 @@ jobs:
           fi
 
       # ----------------------------
-      # 5️⃣ Generate manifests
-      # ----------------------------
-      - name: Generate manifests
-        run: python3 scripts/gen_manifest.py out/packages
-
-      # ----------------------------
-      # 6️⃣ Generate index.json
+      #   Generate index.json
       # ----------------------------
       - name: Generate index
         run: python3 scripts/gen_index.py out
@@ -124,13 +118,13 @@ jobs:
         run: python3 scripts/gen_html.py out
 
       # ----------------------------
-      # 7️⃣ Add .nojekyll
+      #   Add .nojekyll
       # ----------------------------
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
       # ----------------------------
-      # 8️⃣ Deploy to gh-pages
+      #   Deploy to gh-pages
       # ----------------------------
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
@@ -140,7 +134,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # ----------------------------
-      # 9️⃣ Deploy to Cloudflare Pages
+      #   Deploy to Cloudflare Pages
       # ----------------------------
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
