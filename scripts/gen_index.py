@@ -196,7 +196,7 @@ def main():
     }
 
     with open(OUTPUT, "w") as f:
-        json.dump(index, f, indent=2, ensure_ascii=False)
+        json.dump(index, f, separators=(",", ":"), ensure_ascii=False)
 
     print(f"index.json generated at {OUTPUT}")
 
