@@ -48,6 +48,15 @@
 
 > 命名示例：如需适配 2x2 的莫奈图标，命名为 monochrome_2x2.svg。
 
+### 3. SVG 转换工具
+
+如果直接绘制 SVG 格式比较困难，可以使用内置的转换脚本将 PNG 文件转换为 SVG：
+
+- 脚本路径：scripts/convert_svg.py
+- 用法：`scripts/convert_svg.py <目标目录>`
+
+> 在使用转换脚本前，请确保环境中已安装 `Pillow` 和 `zopfli`
+
 ## 免责声明
 
 所有应用图标及相关视觉资产均归其各自的原始开发者或版权持有者所有。  

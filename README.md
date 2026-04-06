@@ -49,6 +49,15 @@ When adapting a new application, create a new folder under the `packages` direct
 
 > Naming example: To adapt a 2x2 Monet icon, name it `monochrome_2x2.svg`.
 
+### 3. SVG Conversion Tool
+
+If the SVG format is difficult to draw directly, you can use the built-in conversion script to convert PNG files to SVG:
+
+- Script Path: scripts/convert_svg.py
+- Usage: `scripts/convert_svg.py <target_directory>`
+
+> Before using the conversion script, please ensure that `Pillow` and `zopfli` are installed in your environment.
+
 ## Disclaimer
 
 All application icons and related visual assets belong to their respective original developers or copyright holders.  
