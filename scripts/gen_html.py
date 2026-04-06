@@ -51,7 +51,7 @@ h1 { font-size: 1.5rem; margin: 0; }
 
 .theme-toggle {
     padding: 8px 16px; border-radius: 20px; border: 1px solid var(--border-color);
-    background: var(--bg-subtle); color: var(--text-main); cursor: pointer; font-size: 14px; white-space: nowrap;
+    background: var(--bg-subtle); color: var(--text-main); cursor: pointer; font-size: 14px;
 }
 
 .search-container { 
@@ -95,7 +95,16 @@ h2 {
     display: flex; align-items: center; justify-content: center; 
     background: var(--img-container-bg);
 }
-.img-container img { position: absolute; width: 100%; height: 100%; object-fit: contain; }
+
+.img-container img { 
+    position: absolute; width: 100%; height: 100%; object-fit: contain; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.img-container img.loaded { 
+    opacity: 1; 
+}
 
 .size-1x2 { width: 60px; height: 205px; } 
 .size-2x1 { width: 205px; height: 60px; }
@@ -126,6 +135,7 @@ toggleBtn.addEventListener('click', () => {
     const isDark = htmlEl.getAttribute('data-theme') === 'dark';
     updateThemeUI(isDark ? 'light' : 'dark');
 });
+
 document.getElementById('search-input').addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
     document.querySelectorAll('.pkg-section').forEach(section => {
@@ -133,9 +143,36 @@ document.getElementById('search-input').addEventListener('input', (e) => {
         section.style.display = pkgName.includes(term) ? 'block' : 'none';
     });
 });
+
+const observerOptions = {
+    root: null,
+    rootMargin: '200px 0px',
+    threshold: 0.01
+};
+
+const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            const realSrc = img.getAttribute('data-src');
+            
+            if (realSrc) {
+                img.src = realSrc;
+                img.onload = () => {
+                    img.classList.add('loaded');
+                };
+                observer.unobserve(img);
+            }
+        }
+    });
+}, observerOptions);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    lazyImages.forEach(img => imageObserver.observe(img));
+});
 </script>
 """
-
 
 SIZE_SUFFIX_RE = re.compile(r"_(\d)x(\d)")
 
@@ -161,11 +198,9 @@ def main():
     global_pkgs = index.get("global", {}).get("packages", {})
 
     all_packages = []
-
     for pkg_name, pkg_info in raw_pkgs.items():
         pkg_info["_root_dir"] = f"packages/{pkg_name}"
         all_packages.append((pkg_name, pkg_info))
-
     for pkg_name, pkg_info in global_pkgs.items():
         pkg_info["_root_dir"] = f"global/{pkg_name}"
         all_packages.append((pkg_name, pkg_info))
@@ -245,19 +280,19 @@ def main():
             if item["type"] == "light-pair":
                 grid_cls = get_grid_class(item["files"][1]["file"])
                 img_html = f"""<div class='img-container special-container {grid_cls} {mono_cls}'>
-                                <img src='{pkg_dir}/{item["files"][0]["file"]}?v={BUILD_ID}' style='z-index:1'>
-                                <img src='{pkg_dir}/{item["files"][1]["file"]}?v={BUILD_ID}' style='z-index:2'>
+                                <img data-src='{pkg_dir}/{item["files"][0]["file"]}?v={BUILD_ID}' style='z-index:1'>
+                                <img data-src='{pkg_dir}/{item["files"][1]["file"]}?v={BUILD_ID}' style='z-index:2'>
                               </div>"""
             elif item["type"] == "night-mode":
                 grid_cls = get_grid_class(item["file"]["file"])
                 img_html = f"""<div class='img-container special-container night-bg {grid_cls}'>
-                                <img src='{pkg_dir}/{item["file"]["file"]}?v={BUILD_ID}' style='z-index:2'>
+                                <img data-src='{pkg_dir}/{item["file"]["file"]}?v={BUILD_ID}' style='z-index:2'>
                               </div>"""
             else:
                 grid_cls = get_grid_class(item["data"]["file"])
                 f_name = item["data"]["file"]
                 if f_name.lower().endswith((".png", ".jpg", ".svg", ".webp")):
-                    content = f"<img src='{pkg_dir}/{f_name}?v={BUILD_ID}'>"
+                    content = f"<img data-src='{pkg_dir}/{f_name}?v={BUILD_ID}'>"
                 else:
                     content = "📄"
                 img_html = (
